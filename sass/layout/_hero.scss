@@ -1,0 +1,108 @@
+@use '../abstracts';
+
+// HERO 
+#hero {
+    height: 95vh;
+    position: relative;
+    isolation: isolate;
+    transition: 250ms;
+    // border: 3px solid green;
+    
+    // background: #000;
+    padding: 5vh 5vw;
+    
+    display: grid;
+    // grid-template-rows: auto 1fr;
+    grid-template-rows: 55% 1fr;
+    grid-template-areas: 'image'
+                            'title';
+
+    // DESKTOP HERO
+    @include abstracts.xlg {
+        grid-template-rows: 1fr;
+        column-gap: 5vw;
+        grid-template-areas: 'image title';
+        padding: 10vh 10vw;
+
+    }
+
+    // HERO ACTIVE BACKGROUND CLASS
+    &.active {
+        background: abstracts.$brand;
+    }
+}
+
+// HERO-IMAGE = BACKGROUND IMAGE
+.hero-image {
+    grid-area: image;
+
+    @include abstracts.sm {
+        // background: none;
+    }
+
+    img {
+        height: 100%;
+        object-fit: contain;
+        // width: 100%;
+        // -webkit-mask: linear-gradient(0deg, transparent, #fff 60%) ;
+        //     mask: linear-gradient(0deg, transparent, #fff 60%);
+
+        @include abstracts.sm {
+            // object-fit: cover;
+        }
+        
+        @include abstracts.lg {
+
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            max-width: 800px;
+            // -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%) ;
+            // mask: linear-gradient(90deg, transparent, #fff 30%);
+        }
+    }
+}
+
+// HERO PAGE TITLE
+.hero-title {
+    // border: 3px solid blue;
+    grid-area: title;
+    // position: relative;
+    // padding: 1rem 5vw 0;
+    // padding: 5vh 5vw 0;
+    // // border: 1px solid red;
+
+    // background: #fafafa;
+    // background: linear-gradient(0deg, #fff, #fafafa 60%);
+    
+
+    @include abstracts.xlg {
+        // background: linear-gradient(90deg, hsl(0, 0%, 97%), #fff);
+        // padding: 5vh 0 0 5vw;
+        // padding: 10vh 0 0vh;
+        // padding: 0.5rem;
+        // border-radius: 1rem;
+        display: grid;
+        place-content: center;
+    }
+
+    h1 {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-size: abstracts.$font-clamp-xlg;
+        text-transform: uppercase;
+    }
+
+    .slogan {
+        // border: 2px solid red;
+
+        :first-child {
+            margin-bottom: .25rem;
+        }
+
+    }
+
+    .cta {
+        margin: 1rem 0 0;
+    }
+
+}

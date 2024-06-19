@@ -1,0 +1,52 @@
+@use '../abstracts';
+
+// PROJECTS SECTION
+#projects {
+
+    background-color: hsl(0, 0%, 90%);
+
+    @include abstracts.dark {
+        background-color: #222;
+        color: #f4f4f4;
+    }
+
+    .projects-container {
+        // border: 1px solid red;
+        // background-color: #fafafa;
+        margin: 10vh auto;
+        display: grid;
+        gap: 10vh;
+
+        
+        @include abstracts.md {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include abstracts.lg {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5vw;
+        }
+    }
+    
+    .project-item {
+        // border: 1px solid blue;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 0.25rem;
+        box-shadow: 0.125rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
+        max-width: 450px;
+
+        .project-details {
+            padding: 0.5rem;
+
+            h3 {
+                // text-transform: uppercase;
+            }
+        }
+
+        img {
+            max-height: 40vh;
+        }
+    }
+
+}
