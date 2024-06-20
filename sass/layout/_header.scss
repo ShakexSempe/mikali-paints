@@ -179,7 +179,7 @@
     text-transform: uppercase;
 
     font-size: 1rem;
-    font-size: abstracts.$font-clamp-sm;
+    font-size: abstracts.$font-clamp-xsm;
     
     transition: 250ms;
     z-index: 1;
@@ -221,6 +221,8 @@
     transition: .5s;
     position: relative;
     border: none;
+    display: flex;
+    justify-content: end;
 
     nav {
         display: none;

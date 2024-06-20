@@ -20,7 +20,8 @@
     // DESKTOP HERO
     @include abstracts.xlg {
         grid-template-rows: 1fr;
-        column-gap: 5vw;
+        // column-gap: 5vw;
+        grid-template-columns: 50% 50%;
         grid-template-areas: 'image title';
         padding: 10vh 10vw;
 
