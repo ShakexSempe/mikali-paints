@@ -178,7 +178,7 @@ a {
   transition: 250ms;
 }
 a:hover:not(.cta-btn, .skip-link), a:focus:not(.cta-btn, .skip-link, .logo) {
-  color: #eb2d53;
+  color: #dc143c;
 }
 
 .icon {

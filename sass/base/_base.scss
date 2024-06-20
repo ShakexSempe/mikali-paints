@@ -197,7 +197,7 @@ a {
     color: inherit;
     transition: 250ms;
     &:hover:not(.cta-btn, .skip-link), &:focus:not(.cta-btn, .skip-link, .logo) {
-        color: abstracts.$brand-light;
+        color: abstracts.$brand;
     }
 }
 
