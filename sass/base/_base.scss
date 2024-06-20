@@ -196,7 +196,7 @@ a {
     text-decoration: 2px underline transparent;
     color: inherit;
     transition: 250ms;
-    &:hover:not(.cta-btn, .skip-link), &:focus:not(.cta-btn, .skip-link, .logo) {
+    &:hover:not(.cta-btn, .skip-link, .logo), &:focus:not(.cta-btn, .skip-link, .logo) {
         color: abstracts.$brand;
     }
 }

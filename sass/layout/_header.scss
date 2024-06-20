@@ -176,11 +176,12 @@
 
  // LOGO - STARTS WITH 0 OPACITY
 .logo {
+    text-transform: uppercase;
 
-    transition: 250ms;
     font-size: 1rem;
     font-size: abstracts.$font-clamp-sm;
-    text-transform: uppercase;
+    
+    transition: 250ms;
     z-index: 1;
 
     span {
@@ -209,7 +210,10 @@
         }
 
     }
-
+    
+    &:active {
+        transform: scale(.95);
+    }
 }
 
 .navigation {
