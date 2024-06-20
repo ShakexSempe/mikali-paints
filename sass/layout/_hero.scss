@@ -88,12 +88,12 @@
     h1 {
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
-        font-size: abstracts.$font-clamp-xlg;
+        font-size: abstracts.$font-clamp-lg;
         text-transform: uppercase;
     }
 
     .slogan {
-        // border: 2px solid red;
+        text-transform: capitalize;
 
         :first-child {
             margin-bottom: .25rem;
