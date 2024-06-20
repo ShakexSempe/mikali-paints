@@ -176,15 +176,12 @@
 
  // LOGO - STARTS WITH 0 OPACITY
 .logo {
-    width: 10rem;
-    width: auto;
-    height: 100%;
 
     transition: 250ms;
-    // overflow: hidden;
-    z-index: 1;
     font-size: 1rem;
+    font-size: abstracts.$font-clamp-sm;
     text-transform: uppercase;
+    z-index: 1;
 
     span {
         color: abstracts.$brand-dark;
