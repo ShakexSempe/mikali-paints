@@ -173,9 +173,9 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: 2px underline transparent;
   color: inherit;
-  transition: 0.25s;
+  transition: 250ms;
 }
 a:hover:not(.cta-btn, .skip-link), a:focus:not(.cta-btn, .skip-link) {
   color: #eb2d53;
@@ -724,36 +724,13 @@ img {
     min-height: 70vh;
   }
 }
-@media (min-width: 820px) {
-  .about {
-    background-image: url("../../img/work.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 60%;
-    background-attachment: fixed;
-  }
-}
-
 .about-article {
   margin-top: 5vh;
   position: relative;
   isolation: isolate;
 }
-.about-article::after {
-  content: "M";
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-size: 15rem;
-  color: #dc143c;
-  opacity: 0.125;
-  filter: blur(0.5rem);
-  z-index: -1;
-}
 .about-article p {
   font-family: "Content", sans-serif;
-  max-width: 600px;
 }
 @media (min-width: 820px) {
   .about-article p {
@@ -1671,6 +1648,7 @@ aside.active .social-links a {
   position: relative;
   isolation: isolate;
   transition: 250ms;
+  background: #ffffff;
   padding: 5vh 5vw;
   display: grid;
   grid-template-rows: 55% 1fr;
@@ -1728,63 +1706,58 @@ aside.active .social-links a {
   margin: 1rem 0 0;
 }
 
-.cta-section {
-  border-top: 2px solid #fff;
-  height: 80vh;
-  position: relative;
-  isolation: isolate;
-  background: linear-gradient(-45deg, transparent 40%, #fffa 60%);
-}
-@media (min-width: 768px) {
-  .cta-section {
-    background-image: url("../../img/hero.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-top: 10vh;
-  }
-}
-.cta-section .cta-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  mix-blend-mode: darken;
-  mix-blend-mode: overlay;
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .cta-section .cta-image {
-    display: none;
-  }
-}
-.cta-section .cta-content-container {
-  padding: 5vh 5vw;
-}
-@media (min-width: 768px) {
-  .cta-section .cta-content-container {
-    padding: 10vh 10vw;
-  }
-}
-.cta-section .cta-content-container h3 {
-  font-weight: 500;
-  font-size: 2rem;
-  font-size: clamp(1.6rem, 5vw, 2.25rem);
-  margin-bottom: 2rem;
-}
-.cta-section .cta-content-container ul {
+.menu-container {
+  background-color: #f4f4f4;
+  min-height: 90vh;
+  padding: 10vh 5vw;
   display: grid;
-  gap: 1rem;
+  gap: 10vh;
 }
-.cta-section .cta-content-container ul li {
+@media (min-width: 820px) {
+  .menu-container {
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+    place-items: center;
+  }
+}
+
+.menu-item {
+  background-color: #ffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem #0002;
+}
+.menu-item .menu-title {
+  font-size: 1rem;
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
+  margin-bottom: 1.5rem;
+}
+.menu-item .menu-title span {
+  color: #dc143c;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  display: block;
+}
+.menu-item .menu-icon {
+  float: left;
+  margin: 0 0.25rem 0 0;
+}
+.menu-item .menu-item-cta {
+  margin: 1rem 0 0.5rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
-.cta-section .cta-content-container ul li:hover .icon {
-  transform: translateX(0.25rem);
-  opacity: 0.75;
+.menu-item .menu-item-cta a {
+  text-underline-offset: 3px;
+}
+.menu-item .menu-item-cta:hover a {
+  text-underline-offset: 1px;
+  text-decoration-color: #dc143c;
+}
+.menu-item .menu-item-cta:hover .icon {
+  transform: translateX(0.15rem);
 }
 
 #projects {

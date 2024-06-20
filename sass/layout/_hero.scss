@@ -2,13 +2,13 @@
 
 // HERO 
 #hero {
+    // border: 1px solid #0006;
     height: 95vh;
     position: relative;
     isolation: isolate;
     transition: 250ms;
-    // border: 3px solid green;
     
-    // background: #000;
+    background: #ffffff;
     padding: 5vh 5vw;
     
     display: grid;
@@ -30,6 +30,7 @@
     &.active {
         background: abstracts.$brand;
     }
+
 }
 
 // HERO-IMAGE = BACKGROUND IMAGE

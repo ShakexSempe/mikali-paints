@@ -193,9 +193,9 @@ p {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: 2px underline transparent;
     color: inherit;
-    transition: .25s;
+    transition: 250ms;
     &:hover:not(.cta-btn, .skip-link), &:focus:not(.cta-btn, .skip-link) {
         color: abstracts.$brand-light;
     }
