@@ -36,7 +36,7 @@
 // HERO-IMAGE = BACKGROUND IMAGE
 .hero-image {
     grid-area: image;
-
+    
     @include abstracts.sm {
         // background: none;
     }
