@@ -2,7 +2,7 @@
 
 .menu-container {
     // border: 2px solid blue;
-    background-color: #f4f4f4;
+    background-color: #eee;
     min-height: 90vh;
     padding: 10vh 5vw;
 
@@ -19,58 +19,87 @@
 
 .menu-item {
     // border: 1px solid #0005;
-    background-color: #ffff;
+    background-color: #fff;
     padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem #0002;
+    isolation: isolate;
+    position: relative;
+    transition: 250ms;
 
-    .menu-item-slogan {
-        font-size: 0.975rem;
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        transition: 250ms ease;
+        z-index: -1;
+    }
+
+    &::before {
+        background-color: hsl(0, 0%, 99%);
+        box-shadow: 0 0.25rem 0.5rem #0002;
+    }
+
+    &::after {
+        box-shadow: 0 0.5rem 1rem #0003;
+        background-color: #ffff;
+        opacity: 0;
+    }
+
+    &:hover {
+        transform: scale(1.0125);
+        &::before {opacity: 0;}
+        &::after {opacity: 1;}
+    }
+    
+}
+
+
+.menu-item-slogan {
+    font-size: 0.975rem;
+    font-size: abstracts.$font-clamp-xsm;
+    margin-bottom: 1rem;
+}
+
+.menu-title {
+    font-size: 1rem;
+    font-size: abstracts.$font-clamp-md;
+    margin-bottom: 1.5rem;
+
+    span {
+        color: abstracts.$brand;
+        text-transform: uppercase;
         font-size: abstracts.$font-clamp-xsm;
-        margin-bottom: 1rem;
+        display: block;
+    }
+}
+
+.menu-icon {
+    float: left;
+    margin: 0 0.25rem 0 0;
+}
+
+.menu-item-cta {
+    margin: 0.5rem 0 0rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    a {
+        text-decoration-color: #ddd;
+        text-underline-offset: 3px;
     }
 
-    .menu-title {
-        font-size: 1rem;
-        font-size: abstracts.$font-clamp-md;
-        margin-bottom: 1.5rem;
-
-        span {
-            color: abstracts.$brand;
-            text-transform: uppercase;
-            font-size: abstracts.$font-clamp-xsm;
-            display: block;
-        }
-    }
-
-    .menu-icon {
-        float: left;
-        margin: 0 0.25rem 0 0;
-    }
-
-    .menu-item-cta {
-        margin: 0.5rem 0 0rem;
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
-
+    &:hover {
         a {
-            text-decoration-color: #ddd;
-            text-underline-offset: 3px;
+            text-underline-offset: 1px;
+            text-decoration-color: abstracts.$brand;
+            &:hover {
+                text-decoration-color: transparent;
+            }
         }
-
-        &:hover {
-            a {
-                text-underline-offset: 1px;
-                text-decoration-color: abstracts.$brand;
-                &:hover {
-                    text-decoration-color: transparent;
-                }
-            }
-            .icon {
-                transform: translateX(0.15rem);
-            }
+        .icon {
+            transform: translateX(0.15rem);
         }
     }
-
 }

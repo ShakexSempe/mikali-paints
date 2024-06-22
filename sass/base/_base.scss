@@ -6,12 +6,13 @@ body {
 
 .container {
     max-width: 100%;
+    background: abstracts.$bg-main;
 }
 
 
 main {
     position: relative;
-    background: #fff;
+    // background: #fff;
     color: abstracts.$text-main;
 
     @include abstracts.dark {

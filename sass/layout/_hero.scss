@@ -8,7 +8,7 @@
     isolation: isolate;
     transition: 250ms;
     
-    background: #ffffff;
+    background: abstracts.$bg-main;
     padding: 5vh 5vw;
     
     display: grid;
@@ -37,7 +37,8 @@
 // HERO-IMAGE = BACKGROUND IMAGE
 .hero-image {
     grid-area: image;
-    
+    mix-blend-mode: darken;
+
     @include abstracts.sm {
         // background: none;
     }
