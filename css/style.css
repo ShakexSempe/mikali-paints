@@ -1235,8 +1235,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
   background-color: #fff;
+  background-color: transparent;
   z-index: -1;
   box-shadow: 0rem 1rem 1rem transparent;
   transition: 0ms;
@@ -1265,6 +1265,31 @@ img {
 #header.toggle-header .navigation .toggle .bar::before, #header.toggle-header .navigation .toggle .bar::after {
   background-color: #dc143c;
   transition: 0.5s;
+}
+#header.main-header::after {
+  background-color: #fff;
+  box-shadow: 0rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.5s ease, background-color 125ms;
+}
+@media (prefers-color-scheme: dark) {
+  #header.main-header::after {
+    background-color: #000;
+  }
+}
+#header.main-header .navigation .toggle .bar {
+  background-color: #dc143c;
+  background-color: #000;
+}
+#header.main-header .navigation .toggle .bar::before, #header.main-header .navigation .toggle .bar::after {
+  background-color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  #header.main-header .navigation .toggle .bar {
+    background-color: #ffff;
+  }
+  #header.main-header .navigation .toggle .bar::before, #header.main-header .navigation .toggle .bar::after {
+    background-color: #ffff;
+  }
 }
 
 .logo {

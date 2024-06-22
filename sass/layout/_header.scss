@@ -29,11 +29,12 @@
         width: 100%;
         height: 100%;
         
-        background-color: transparent;
         background-color: #fff;
+        background-color: transparent;
 
         z-index: -1;
         box-shadow: 0rem 1rem 1rem transparent;
+        // box-shadow: 0rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.025);
         transition: 0ms;
         // box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
         transition: box-shadow 500ms ease, background-color 250ms;
@@ -141,36 +142,36 @@
     }
 
     // MAIN SECTION HEADER STYLE WHEN IO
-    // &.main-header {
+    &.main-header {
         
-    //     &::after {
-    //         background-color: #fff;
-    //         box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
-    //         transition: box-shadow .5s ease, background-color 125ms;
-    //         @include abstracts.dark {
-    //             background-color: #000;
-    //         }
-    //     }
+        &::after {
+            background-color: #fff;
+            box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
+            transition: box-shadow .5s ease, background-color 125ms;
+            @include abstracts.dark {
+                background-color: #000;
+            }
+        }
         
-    //     .navigation {
-    //         .toggle {
-    //             .bar {
-    //                 background-color: abstracts.$brand;
-    //                 background-color: #000;
-    //                 &::before, &::after {
-    //                     background-color: #000;
-    //                 }
-    //                 @include abstracts.dark {
-    //                     background-color: #ffff;
-    //                     &::before, &::after {
-    //                         background-color: #ffff;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
+        .navigation {
+            .toggle {
+                .bar {
+                    background-color: abstracts.$brand;
+                    background-color: #000;
+                    &::before, &::after {
+                        background-color: #000;
+                    }
+                    @include abstracts.dark {
+                        background-color: #ffff;
+                        &::before, &::after {
+                            background-color: #ffff;
+                        }
+                    }
+                }
+            }
+        }
 
-    // }
+    }
     
 }
 
