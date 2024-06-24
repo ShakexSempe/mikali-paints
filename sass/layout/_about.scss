@@ -5,7 +5,7 @@
         position: relative;
         isolation: isolate;
         min-height: 50vh;
-        padding: 5vh 5vw;
+        padding: 5vh 5vw 10vh;
         background: abstracts.$bg-main;
         // border: 2px solid #000;
 
@@ -21,6 +21,7 @@
             // border: 3px solid red;
             padding: 10vh 10vw;
             background-size: 60%;
+            background-size: contain;
             background-attachment: fixed;
             background-image: url('../../img/mikali-logo-copy.jpg');
             background-repeat: no-repeat;
@@ -38,6 +39,10 @@
         z-index: -1;
         mix-blend-mode: darken;
 
+        @include abstracts.sm {
+            top: 0;
+        }
+
         @include abstracts.lg {
             display: none;
         }
@@ -46,18 +51,17 @@
 
     // ABOUT ARTICLE
     .about-article {
-        // margin-top: 5vh;
-        padding-top: 5vh;
+        padding: 10vh 0 0;
         position: relative;
         // isolation: isolate;
         // border: 2px solid red;
-        max-width: 600px;
+        max-width: 550px;
         background: abstracts.$bg-main-trans;
 
         @include abstracts.lg {
-            padding: 1rem 1rem 1rem 0;
-            border-radius: 1rem;
-            background: abstracts.$bg-main;
+            // padding: 1rem 1rem 1rem 0;
+            // border-radius: 1rem;
+            // background: abstracts.$bg-main;
         }
 
         h3 {
@@ -65,7 +69,7 @@
         }
 
         a {
-            text-transform: capitalize;
+            // text-transform: capitalize;
             color: abstracts.$brand;
         }
 
