@@ -40,11 +40,11 @@
 
     &::before {
         background-color: hsl(0, 0%, 99%);
-        box-shadow: 0 0.25rem 0.5rem #0002;
+        box-shadow: 0 0.25rem 0.5rem #0003;
     }
 
     &::after {
-        box-shadow: 0 0.5rem 1rem #0003;
+        box-shadow: 0 0.5rem 1rem #0002;
         background-color: #ffff;
         opacity: 0;
     }
