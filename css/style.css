@@ -1226,6 +1226,7 @@ img {
   #header {
     height: 8vh;
     padding: 0.5rem 10vw;
+    padding: 0.5rem 10vw;
   }
 }
 #header::after {
@@ -1746,8 +1747,13 @@ aside.active .social-links a {
 }
 @media (min-width: 820px) {
   .menu-container {
+    padding: 15vh 10vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-container {
     min-height: 100vh;
-    padding: 15vh 5vw 10vh;
+    padding: 15vh 10vw 10vh;
     grid-template-columns: repeat(3, 1fr);
     gap: 5vw;
     place-items: center;

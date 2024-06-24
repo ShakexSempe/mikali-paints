@@ -10,8 +10,12 @@
     gap: 10vh;
 
     @include abstracts.lg {
+        padding: 15vh 10vw;
+    }
+
+    @include abstracts.xlg {
         min-height: 100vh;
-        padding: 15vh 5vw 10vh;
+        padding: 15vh 10vw 10vh;
 
         grid-template-columns: repeat(3, 1fr);
         gap: 5vw;
