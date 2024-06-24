@@ -1747,9 +1747,11 @@ aside.active .social-links a {
 @media (min-width: 820px) {
   .menu-container {
     min-height: 100vh;
+    padding: 15vh 5vw 10vh;
     grid-template-columns: repeat(3, 1fr);
     gap: 5vw;
     place-items: center;
+    align-items: start;
   }
 }
 
