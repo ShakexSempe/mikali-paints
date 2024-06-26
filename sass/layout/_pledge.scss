@@ -1,0 +1,77 @@
+@use '../abstracts';
+
+    // ABOUT SECTION
+    .pledge {
+        position: relative;
+        isolation: isolate;
+        min-height: 50vh;
+        padding: 5vh 5vw 10vh;
+        background: abstracts.$bg-main;
+        // border: 2px solid #000;
+
+        // DARK-THEME 
+        @include abstracts.dark {
+            background-color: #000;
+            color: #f4f4f4;
+            min-height: 70vh;   
+        }
+
+        // DESKTOP ABOUT SECTION STYLE
+        @include abstracts.lg {
+            // border: 3px solid red;
+            padding: 10vh 10vw;
+            background-size: 60%;
+            background-size: contain;
+            background-attachment: fixed;
+            background-image: url('../../img/mikali-logo-copy.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+    }
+    
+
+    // ABOUT IMG 
+    .pledge-img {
+        // border: 2px solid green;
+        position: sticky;
+        top: 10vh;
+        z-index: -1;
+        mix-blend-mode: darken;
+
+        @include abstracts.sm {
+            top: 0;
+        }
+
+        @include abstracts.lg {
+            display: none;
+        }
+
+    }
+
+    // ABOUT ARTICLE
+    .pledge-article {
+        padding: 10vh 0 0;
+        position: relative;
+        // isolation: isolate;
+        // border: 2px solid red;
+        max-width: 550px;
+        background: abstracts.$bg-main-trans;
+
+        @include abstracts.lg {
+            // padding: 1rem 1rem 1rem 0;
+            // border-radius: 1rem;
+            // background: abstracts.$bg-main;
+        }
+
+        h3 {
+            color: abstracts.$brand;
+        }
+
+        a {
+            // text-transform: capitalize;
+            color: abstracts.$brand;
+        }
+
+    }
+

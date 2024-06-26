@@ -713,216 +713,16 @@ img {
 }
 
 .about {
-  position: relative;
-  isolation: isolate;
-  min-height: 50vh;
-  padding: 5vh 5vw 10vh;
-  background: #fafafa;
-}
-@media (prefers-color-scheme: dark) {
-  .about {
-    background-color: #000;
-    color: #f4f4f4;
-    min-height: 70vh;
-  }
-}
-@media (min-width: 820px) {
-  .about {
-    padding: 10vh 10vw;
-    background-size: 60%;
-    background-size: contain;
-    background-attachment: fixed;
-    background-image: url("../../img/mikali-logo-copy.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
+  padding: 5vh 5vw 0;
 }
 
-.about-img {
-  position: sticky;
-  top: 10vh;
-  z-index: -1;
-  mix-blend-mode: darken;
-}
-@media (min-width: 500px) {
-  .about-img {
-    top: 0;
-  }
-}
-@media (min-width: 820px) {
-  .about-img {
-    display: none;
-  }
-}
-
-.about-article {
-  padding: 10vh 0 0;
-  position: relative;
-  max-width: 550px;
-  background: rgba(250, 250, 250, 0.97);
-}
-.about-article h3 {
-  color: #dc143c;
+.about-article p {
+  margin-bottom: 1.5rem;
+  max-width: 600px;
 }
 .about-article a {
-  color: #dc143c;
-}
-
-#banner {
-  background-color: #fff;
-  isolation: isolate;
-  margin: 5vh 5vw;
-}
-@media (min-width: 768px) {
-  #banner {
-    margin: 20vh 5vw;
-  }
-}
-@media (min-width: 500px) {
-  #banner .container-title {
-    text-align: center;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  #banner {
-    background-color: #000;
-  }
-}
-
-.banner-image-container {
-  margin: 10vh 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
-}
-@media (min-width: 500px) {
-  .banner-image-container {
-    gap: 10vh;
-  }
-}
-.banner-image-container figure {
-  border-radius: 0.5rem;
-  border: 1px solid #000;
-  background: #000;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-inline: auto;
-}
-.banner-image-container figure .banner-image {
-  width: 100%;
-  height: auto;
-  max-height: 75vh;
-  object-fit: cover;
-  object-position: 25% 50%;
-  border-radius: 0;
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
-}
-@media (min-width: 768px) {
-  .banner-image-container figure .banner-image {
-    max-width: 600px;
-    height: 100%;
-    flex-basis: 50%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0;
-  }
-}
-@media (min-width: 768px) {
-  .banner-image-container figure {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-}
-.banner-image-container figure .banner-content {
-  background-color: #000;
-  padding: 1rem 0.5rem;
-}
-@media (min-width: 768px) {
-  .banner-image-container figure .banner-content {
-    flex-basis: 50%;
-    width: 100%;
-    padding: 10vh 5vw;
-    padding: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  .banner-image-container figure .banner-content {
-    padding: 10vh 5vw;
-    display: grid;
-    place-items: center;
-  }
-}
-.banner-image-container figure .banner-content .banner-image-title h3 {
-  margin-bottom: 0.5rem;
-  color: #eb2d53;
-}
-@media (min-width: 820px) {
-  .banner-image-container figure .banner-content .banner-image-title h3 {
-    margin-bottom: 1rem;
-  }
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 1rem;
-}
-@media (min-width: 768px) {
-  .banner-image-container figure .banner-content .banner-image-title .flex-container {
-    justify-content: space-between;
-  }
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item {
-  outline: 1px solid transparent;
-  background: #222;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  transition: 0.25s;
-  font-size: clamp(.95rem, 1.25vw, 1.025rem);
-}
-@media (min-width: 768px) {
-  .banner-image-container figure .banner-content .banner-image-title .flex-item {
-    padding: 1rem;
-  }
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item h4 {
   text-transform: capitalize;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item p {
-  color: #fff;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item a {
-  color: #fff;
-  width: 70%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  transition: 0.25s;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item a:hover, .banner-image-container figure .banner-content .banner-image-title .flex-item a:focus {
-  color: #eb2d53;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item a i {
-  color: #eb2d53;
-  margin-right: 0.5rem;
-  transition: 0.25s;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item a img {
-  margin-right: 0.5rem;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item:hover {
-  outline-color: #fff4;
-}
-.banner-image-container figure .banner-content .banner-image-title .flex-item:hover span {
-  color: #eb2d53;
-  transition: 0.25s;
+  color: #dc143c;
 }
 
 #contact {
@@ -1862,6 +1662,62 @@ aside.active .social-links a {
 }
 .menu-item-cta:hover .icon {
   transform: translateX(0.15rem);
+}
+
+.pledge {
+  position: relative;
+  isolation: isolate;
+  min-height: 50vh;
+  padding: 5vh 5vw 10vh;
+  background: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  .pledge {
+    background-color: #000;
+    color: #f4f4f4;
+    min-height: 70vh;
+  }
+}
+@media (min-width: 820px) {
+  .pledge {
+    padding: 10vh 10vw;
+    background-size: 60%;
+    background-size: contain;
+    background-attachment: fixed;
+    background-image: url("../../img/mikali-logo-copy.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.pledge-img {
+  position: sticky;
+  top: 10vh;
+  z-index: -1;
+  mix-blend-mode: darken;
+}
+@media (min-width: 500px) {
+  .pledge-img {
+    top: 0;
+  }
+}
+@media (min-width: 820px) {
+  .pledge-img {
+    display: none;
+  }
+}
+
+.pledge-article {
+  padding: 10vh 0 0;
+  position: relative;
+  max-width: 550px;
+  background: rgba(250, 250, 250, 0.97);
+}
+.pledge-article h3 {
+  color: #dc143c;
+}
+.pledge-article a {
+  color: #dc143c;
 }
 
 #projects {
