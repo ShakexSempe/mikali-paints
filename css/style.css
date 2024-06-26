@@ -1690,10 +1690,20 @@ aside.active .social-links a {
   }
 }
 
+.pledge-icon {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  right: 5vw;
+  right: 5vw;
+  top: 20vh;
+  opacity: 0.075;
+}
+
 .pledge-img {
   position: sticky;
   top: 10vh;
-  z-index: -1;
+  z-index: -2;
   mix-blend-mode: darken;
 }
 @media (min-width: 500px) {
@@ -1718,6 +1728,17 @@ aside.active .social-links a {
 }
 .pledge-article a {
   color: #dc143c;
+}
+
+.cta-flex-container {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+.cta-flex-container a .icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 #projects {
