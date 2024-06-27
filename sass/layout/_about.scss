@@ -2,6 +2,32 @@
 
 .about {
     padding: 5vh 5vw 0;
+    isolation: isolate;
+    position: relative;
+    
+    @include abstracts.lg {
+        padding: 10vh 10vw;
+        background: linear-gradient(90deg, #fff 45%, transparent 60%);
+
+        // background-color: #fff5;
+        
+        // PSEUDO BG
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-image: url('../../img/renovation.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+            background-attachment: fixed;
+            mix-blend-mode: overlay;
+            // opacity: .5;
+
+        }
+    }
+
 }
 
 .about-article {
@@ -14,4 +40,8 @@
         text-transform: capitalize;
         color: abstracts.$brand;
     }
+
+    // @include abstracts.lg {
+    //     background: #fff;
+    // }
 }

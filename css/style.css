@@ -714,6 +714,26 @@ img {
 
 .about {
   padding: 5vh 5vw 0;
+  isolation: isolate;
+  position: relative;
+}
+@media (min-width: 820px) {
+  .about {
+    padding: 10vh 10vw;
+    background: linear-gradient(90deg, #fff 45%, transparent 60%);
+  }
+  .about::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url("../../img/renovation.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: overlay;
+  }
 }
 
 .about-article p {
@@ -1501,6 +1521,7 @@ aside.active .social-links a {
   isolation: isolate;
   transition: 250ms;
   background: #e6e6e6;
+  background: linear-gradient(0deg, #d9d9d9, #e6e6e6);
   display: grid;
   grid-template-rows: 55% 1fr;
   grid-template-areas: "image" "title";
