@@ -2,18 +2,20 @@
 
 #header {
     position: fixed;
+    height: 7vh;
     top: 0;
     width: 100%;
-    z-index: 20;
-    transition: all 250ms;
-    isolation: isolate;
+    padding: 0.5rem 5vw;
     background-color: transparent;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    transition: all 250ms;
+    isolation: isolate;
+    z-index: 20;
 
-    height: 7vh;
-    padding: 0.5rem 5vw;
     // DESKTOP HEADER STYLE
     @include abstracts.lg {
         height: 8vh;
@@ -29,15 +31,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        
         background-color: #fff;
         background-color: transparent;
 
         z-index: -1;
         box-shadow: 0rem 1rem 1rem transparent;
-        // box-shadow: 0rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.025);
         transition: 0ms;
-        // box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
         transition: box-shadow 500ms ease, background-color 250ms;
 
         @include abstracts.dark {
@@ -61,8 +60,6 @@
         }
 
     }
-    
-    
 
     // HERO SECTION HEADER STYLE
     // &.hero-header {
@@ -176,7 +173,7 @@
     
 }
 
- // LOGO - STARTS WITH 0 OPACITY
+// LOGO - STARTS WITH 0 OPACITY
 .logo {
     text-transform: uppercase;
 
@@ -219,12 +216,12 @@
 }
 
 .navigation {
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: end;
     text-transform: capitalize;
-    transition: .5s;
     position: relative;
     border: none;
-    display: flex;
-    justify-content: end;
 
     nav {
         display: none;
@@ -233,13 +230,13 @@
             display: block;
             transition: .5s;
 
+
             ul {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
                 isolation: isolate;
 
-                // border: 2px solid red;
                 li {
                     list-style: none;
                     // float: left;

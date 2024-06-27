@@ -1034,17 +1034,17 @@ img {
 
 #header {
   position: fixed;
+  height: 7vh;
   top: 0;
   width: 100%;
-  z-index: 20;
-  transition: all 250ms;
-  isolation: isolate;
+  padding: 0.5rem 5vw;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 7vh;
-  padding: 0.5rem 5vw;
+  transition: all 250ms;
+  isolation: isolate;
+  z-index: 20;
 }
 @media (min-width: 820px) {
   #header {
@@ -1151,11 +1151,8 @@ img {
 
 .navigation {
   text-transform: capitalize;
-  transition: 0.5s;
   position: relative;
   border: none;
-  display: flex;
-  justify-content: end;
 }
 .navigation nav {
   display: none;
@@ -1503,18 +1500,19 @@ aside.active .social-links a {
   position: relative;
   isolation: isolate;
   transition: 250ms;
-  background: #fafafa;
-  padding: 5vh 5vw;
+  background: #e6e6e6;
   display: grid;
   grid-template-rows: 55% 1fr;
   grid-template-areas: "image" "title";
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   #hero {
+    background: #fafafa;
     grid-template-rows: 1fr;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "image title";
-    padding: 10vh 10vw;
+    grid-template-areas: "title image";
+    align-items: center;
+    padding: 10vh 10vw 5vh;
   }
 }
 #hero.active {
@@ -1531,19 +1529,21 @@ aside.active .social-links a {
 }
 @media (min-width: 820px) {
   .hero-image img {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    max-width: 800px;
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+    object-position: center;
+    border-radius: 0.5rem;
   }
 }
 
 .hero-title {
   grid-area: title;
+  padding: 5vh 5vw 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   .hero-title {
-    display: grid;
-    place-content: center;
+    padding: 0.5rem;
   }
 }
 .hero-title h1 {
