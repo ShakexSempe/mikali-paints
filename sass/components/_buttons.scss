@@ -52,16 +52,16 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     margin: 0.5rem 0;
 
     background: abstracts.$brand-light;
-    color: abstracts.$text-second;
-    color: abstracts.$text-main;
     color: hsl(0, 0%, 85%);
+    color: abstracts.$text-main;
+    color: abstracts.$text-second;
     border: none;
     border-radius: abstracts.$border-radius-sm;
 
     // font-family: abstracts.$font-content;
     font-size: 0.85rem;
     font-size: abstracts.$font-clamp-xsm;
-    font-weight: 500;
+    // font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
     text-transform: uppercase;
