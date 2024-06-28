@@ -45,11 +45,12 @@
     &::before {
         background-color: hsl(0, 0%, 99%);
         box-shadow: 0 0.25rem 0.5rem #0002;
+        box-shadow: abstracts.$box-shadow-sm;
     }
 
     &::after {
-        box-shadow: 0 0.5rem 1rem #0001;
         background-color: #ffff;
+        box-shadow: 0 0.5rem 1rem #0002;
         opacity: 0;
     }
 
