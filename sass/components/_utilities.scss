@@ -47,6 +47,7 @@
                 transform: translateY(-.25em) translateX(.25em);
             }
             &::after {
+                background-color: abstracts.$brand;
                 transform: translateY(.25em) translateX(-.25rem);
             }
         }

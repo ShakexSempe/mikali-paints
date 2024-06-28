@@ -176,39 +176,26 @@
 // LOGO - STARTS WITH 0 OPACITY
 .logo {
     text-transform: uppercase;
+    position: relative;
 
     font-size: 1rem;
     font-size: abstracts.$font-clamp-xsm;
     
+    cursor: default;
     transition: 250ms;
     z-index: 1;
+
+    // DESKTOP POINTER CURSOR
+    @include abstracts.sm {
+        cursor: pointer;
+    }
 
     span {
         color: abstracts.$brand-dark;
     }
 
-    img {
-        // border: 1px solid yellow;
-        height: 100%;
-        width: 100%;
-        // object-fit: cover;
-        object-fit: contain;
-        object-position: left bottom;
-        border-bottom-left-radius: abstracts.$border-radius-xsm;
-        border-bottom-right-radius: abstracts.$border-radius-xsm;
+        
 
-        cursor: default;
-        transition: 250ms;
-
-        @include abstracts.sm {
-            cursor: pointer;
-        }
-
-        &:active {
-            transform: scale(.95);
-        }
-
-    }
     
     &:active {
         transform: scale(.95);
