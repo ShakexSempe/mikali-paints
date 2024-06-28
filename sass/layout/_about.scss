@@ -44,4 +44,33 @@
     // @include abstracts.lg {
     //     background: #fff;
     // }
+
+    &.io-item {
+
+        h3 {
+            letter-spacing: 0.025rem;        
+            transition: 500ms;
+        }
+
+        p {
+            opacity: 0.45;
+            transform: translateY(0.5rem);
+            transition: 1000ms 250ms;
+        }
+
+    }
+
+    &.active-item {
+
+        h3 {
+            letter-spacing: normal;        
+        }
+        
+        p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+
 }

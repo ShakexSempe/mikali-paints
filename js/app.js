@@ -159,10 +159,10 @@ ioItem.forEach(item => {
         function(entries, itemObserver) {
             entries.forEach(entry => {
                 if(!entry.isIntersecting){
-                    // console.log("Item NOT io");
+                    console.log("Item NOT io");
                     item.classList.remove("active-item");
                 } else {
-                    // console.log("Item IS io");
+                    console.log("Item IS io");
                     item.classList.add("active-item");
                 }
             })

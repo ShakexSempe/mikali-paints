@@ -745,6 +745,22 @@ img {
   text-transform: capitalize;
   color: #a30f2d;
 }
+.about-article.io-item h3 {
+  letter-spacing: 0.025rem;
+  transition: 500ms;
+}
+.about-article.io-item p {
+  opacity: 0.45;
+  transform: translateY(0.5rem);
+  transition: 1000ms 250ms;
+}
+.about-article.active-item h3 {
+  letter-spacing: normal;
+}
+.about-article.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 #contact {
   background: #000;
