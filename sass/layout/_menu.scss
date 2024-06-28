@@ -62,7 +62,6 @@
     
 }
 
-
 .menu-item-slogan {
     font-size: 0.975rem;
     font-size: abstracts.$font-clamp-xsm;
@@ -99,6 +98,7 @@
         text-decoration-color: hsl(0, 0%, 95%);
         text-underline-offset: 3px;
     }
+
 
     &:hover {
         a {

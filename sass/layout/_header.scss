@@ -119,22 +119,18 @@
 
     // HEADER STYLE WHEN SIDEBAR SELECTED
     &.toggle-header {
-        &::after {
-            background-color: #000;
-            
-        }
         .navigation {
 
-            .toggle {
-                .bar {
-                    background-color: abstracts.$brand;
-                    transition: .5s;
-                    &::before, &::after {
-                        background-color: abstracts.$brand;
-                        transition: .5s;
-                    }
-                }
-            }
+            // .toggle {
+            //     .bar {
+            //         background-color: abstracts.$brand;
+            //         transition: .5s;
+            //         &::before, &::after {
+            //             background-color: abstracts.$brand;
+            //             transition: .5s;
+            //         }
+            //     }
+            // }
 
         }
     }
@@ -146,28 +142,13 @@
             background-color: #fff;
             box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
             transition: box-shadow .5s ease, background-color 125ms;
+            
             @include abstracts.dark {
                 background-color: #000;
             }
+
         }
         
-        .navigation {
-            .toggle {
-                .bar {
-                    background-color: abstracts.$brand;
-                    background-color: #000;
-                    &::before, &::after {
-                        background-color: #000;
-                    }
-                    @include abstracts.dark {
-                        background-color: #ffff;
-                        &::before, &::after {
-                            background-color: #ffff;
-                        }
-                    }
-                }
-            }
-        }
 
     }
     
