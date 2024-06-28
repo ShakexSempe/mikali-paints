@@ -3,20 +3,23 @@ $btn-sm : clamp(9rem, 15vw, 10rem);
 $btn-md : clamp(11rem, 15vw, 11rem);
 $btn-lg : clamp(12rem, 15vw, 13rem);
 
-$brand: #f8650c;
 $brand: #dc143c;
+$brand: #a30f2d;
 $brand-red: #dc143c;
-$brand-orange: rgb(211,94,41);
-$brand-dark: hsl(348, 83%, 45%);
+$brand-dark: #d2143a;
 $brand-light: hsl(348, 83%, 55%);
+$brand-light-links: #f2738c;
 $brand-lightest-border: hsla(39, 100%, 50%, .3);
 $brand-light-border: hsla(23, 94%, 51%, .4);
+
+$brand-btn: linear-gradient(0deg, #000, #333);
+$brand-btn: linear-gradient(0deg, $brand, #dc143c, $brand);
+$brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
+$brand-btn-hover: $brand;
 
 $brand-overlay: linear-gradient(90deg, $brand, hsl(33, 100%, 50%), $brand);
 $brand-overlay-dark: linear-gradient(45deg, $brand, $brand-light);
 $brand-overlay-darker: linear-gradient(-30deg, $brand, $brand-light, $brand);
-$brand-btn: linear-gradient(0deg, $brand-dark, $brand-light, $brand-dark);
-$brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
 
 $bg-main: #fafafa;
 $bg-main-trans: hsla(0, 0%, 98%, .97);

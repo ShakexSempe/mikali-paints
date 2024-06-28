@@ -52,7 +52,9 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     margin: 0.5rem 0;
 
     background: abstracts.$brand-light;
-    color: #000;
+    color: abstracts.$text-second;
+    color: abstracts.$text-main;
+    color: hsl(0, 0%, 85%);
     border: none;
     border-radius: abstracts.$border-radius-sm;
 

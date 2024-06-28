@@ -69,12 +69,14 @@
 }
 
 .menu-title {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-size: abstracts.$font-clamp-md;
     margin-bottom: 1.5rem;
-
+    color: abstracts.$brand;
+    font-weight: 500;
+    
     span {
-        color: abstracts.$brand;
+        color: abstracts.$text-main;
         text-transform: uppercase;
         font-size: abstracts.$font-clamp-xsm;
         display: block;
@@ -93,7 +95,7 @@
     gap: 0.5rem;
 
     a {
-        text-decoration-color: #ddd;
+        text-decoration-color: hsl(0, 0%, 95%);
         text-underline-offset: 3px;
     }
 

@@ -365,14 +365,16 @@
                 }
             }
         }
-    }
 
-
-    .nav-link {
-        &.active {
-            color: abstracts.$brand;
+        .nav-link {
+            &.active {
+                color: abstracts.$brand;
+            }
         }
+
     }
+
+
 }
 
 aside {
@@ -567,7 +569,7 @@ aside {
 
                 &.active {
                     // border-bottom: 1px solid abstracts.$brand-lightest-border;
-                    
+                    color: abstracts.$brand-light-links;
                     .icon , i {
                         opacity: 1;
                     }
