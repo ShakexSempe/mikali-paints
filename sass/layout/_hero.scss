@@ -103,6 +103,9 @@
 
     .slogan {
         text-transform: capitalize;
+        p {
+            font-size: abstracts.$font-clamp-sm;
+        }
 
         :first-child {
             margin-bottom: .25rem;
