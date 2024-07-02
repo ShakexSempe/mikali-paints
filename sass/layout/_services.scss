@@ -34,12 +34,14 @@
 .service-section {
     // border: 2px solid blue;
     position: relative;
+
     .service-title {
         max-width: 400px;
         h3 {
             font-size: abstracts.$font-clamp-xlg;
             color: abstracts.$brand;
-            margin-bottom: 10vh;
+            margin-bottom: 5vh;
+            line-height: 1.4;
             // max-width: 100px;
         }
     
@@ -48,7 +50,7 @@
             right: 5vw;
             top: 5vh;
             rotate: -30deg;
-            filter: drop-shadow(-1rem 1rem 0.125rem hsla(0, 100%, 25%, 0.25));
+            filter: drop-shadow(-1rem 1rem 1.75rem hsla(0, 100%, 25%, 1));
             animation: brush 5000ms infinite;
 
             @include abstracts.lg {
@@ -58,9 +60,9 @@
 
             @keyframes brush {
                 50% {
-                    rotate: -15deg;
+                    rotate: 0deg;
                     translate: 0 1rem;
-                    filter: drop-shadow(-1rem 1rem 2rem hsla(0, 100%, 25%, 1));
+                    filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(0, 100%, 25%, 0.25));
                 }
             }
         }
@@ -76,16 +78,24 @@
 
 
     .service-items {
-        margin-block: 10vh;
-        background: #fff;
-        border-radius: 0.5rem;
+        margin-block: 5vh;
+        // background: #fff;
         // box-shadow: abstracts.$box-shadow-sm;
         // box-shadow: 0.125rem 0.75rem 0.5rem #0003;
-        box-shadow: abstracts.$box-shadow-sm;
         // overflow: hidden;
+        display: grid;
+        gap: 5vh;
         
+
+        @include abstracts.md {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .service-item {
+            border-radius: 0.5rem;
+            background: #fff;
             position: relative;
+            box-shadow: abstracts.$box-shadow-sm;
             
             h4 {
                 padding: 0.5rem;
@@ -109,5 +119,6 @@
                 }
             }
         }
+
     }
 }
