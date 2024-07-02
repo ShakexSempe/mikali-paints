@@ -13,9 +13,9 @@ $brand-lightest-border: hsla(39, 100%, 50%, .3);
 $brand-light-border: hsla(23, 94%, 51%, .4);
 
 $brand-btn: linear-gradient(0deg, #000, #333);
-$brand-btn: linear-gradient(0deg, $brand, #dc143c, $brand);
-$brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
+$brand-btn: linear-gradient(0deg, $brand, $brand-light);
 $brand-btn-hover: $brand;
+$brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
 
 $brand-overlay: linear-gradient(90deg, $brand, hsl(33, 100%, 50%), $brand);
 $brand-overlay-dark: linear-gradient(45deg, $brand, $brand-light);
