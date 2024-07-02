@@ -80,7 +80,8 @@
         background: #fff;
         border-radius: 0.5rem;
         // box-shadow: abstracts.$box-shadow-sm;
-        box-shadow: 0.125rem 0.75rem 0.5rem #0003;
+        // box-shadow: 0.125rem 0.75rem 0.5rem #0003;
+        box-shadow: abstracts.$box-shadow-sm;
         // overflow: hidden;
         
         .service-item {

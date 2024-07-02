@@ -1969,7 +1969,7 @@ aside.active .social-links a {
   margin-block: 10vh;
   background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.75rem 0.5rem #0003;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.125);
 }
 .service-section .service-items .service-item {
   position: relative;
