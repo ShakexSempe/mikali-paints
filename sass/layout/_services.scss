@@ -2,6 +2,7 @@
 
 // SERVICES SECTION
 .services {
+    border: 1px solid red;
     background-color: #f4f4f4;
     padding: 10vh 5vw;
     position: relative;
@@ -24,43 +25,8 @@
         }
     }
 
-    ul {
-        list-style: none;
-        display: grid;
-        gap: 1rem;
 
-        li {
-            text-transform: capitalize;
-            transition: 125ms;
+    
 
-            &:hover {
-                color: abstracts.$brand;
-                transform: translateX(0.5rem);
-            }
-        }
-    }
-
-    // LOGO BG
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 50vh;
-        width: 50vw;
-        background-image: url('../img/vestro-logo.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        opacity: .075;
-        mix-blend-mode: darken;
-
-        @include abstracts.md {
-        opacity: 0.5;
-        background-size: contain;
-        }
-
-    }
 }
 
