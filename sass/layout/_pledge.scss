@@ -83,30 +83,30 @@
             color: abstracts.$brand;
         }
 
-        &.io-item {
+        // &.io-item {
             
-            .pledge-icon{
-                opacity: 0.75;
-                transition: 2000ms;
-            }
+        //     .pledge-icon{
+        //         opacity: 0.75;
+        //         transition: 2000ms;
+        //     }
 
-            p {
-                opacity: .1;
-                transition: 1500ms;
-            }
-        }
+        //     p {
+        //         opacity: .1;
+        //         transition: 1500ms;
+        //     }
+        // }
 
-        &.active-item {
+        // &.active-item {
             
-            .pledge-icon{
-                opacity: 0.075;
-            }
+        //     .pledge-icon{
+        //         opacity: 0.075;
+        //     }
 
-            p {
-                opacity: 1;
-                transition-delay: 750ms;
-            }
-        }
+        //     p {
+        //         opacity: 1;
+        //         transition-delay: 750ms;
+        //     }
+        // }
 
     }
 
