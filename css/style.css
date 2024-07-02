@@ -1546,6 +1546,20 @@ aside.active .social-links a {
 .hero-title {
   grid-area: title;
   padding: 5vh 5vw 0;
+  position: relative;
+}
+.hero-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 5vh;
+  left: 5vw;
+  width: 85%;
+  height: 50%;
+  background: #ededed;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(1rem);
 }
 @media (min-width: 820px) {
   .hero-title {

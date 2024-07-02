@@ -73,25 +73,26 @@
 
 // HERO PAGE TITLE
 .hero-title {
-    // border: 3px solid blue;
     grid-area: title;
-    // position: relative;
-    // padding: 1rem 5vw 0;
     padding: 5vh 5vw 0;
-    // // border: 1px solid red;
+    position: relative;
 
-    // background: #fafafa;
-    // background: linear-gradient(0deg, #fff, #fafafa 60%);
-    
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        top: 5vh;
+        left: 5vw;
+        width: 85%;
+        height: 50%;
+        background: hsl(0, 0%, 93%);
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(1rem);
+    }
 
     @include abstracts.lg {
-        // background: linear-gradient(90deg, hsl(0, 0%, 97%), #fff);
-        // padding: 5vh 0 0 5vw;
-        // padding: 10vh 0 0vh;
         padding: 0.5rem;
-        // // border-radius: 1rem;
-        // display: grid;
-        // place-content: center;
     }
 
     h1 {
