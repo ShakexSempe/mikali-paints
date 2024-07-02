@@ -97,6 +97,8 @@
                     li {
                         padding: 0.5rem;
                         text-transform: capitalize;
+                        font-size: 0.9rem;
+                        font-size: abstracts.$font-clamp-xsm
                     }
                     :nth-child(even) {
                         background-color: hsl(0, 0%, 85%);
