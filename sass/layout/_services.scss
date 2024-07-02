@@ -8,7 +8,7 @@
     padding: 10vh 5vw;
     position: relative;
     isolation: isolate;
-    height: 95vh;
+    // height: 95vh;
     width: 100%;
 
     @include abstracts.md {
@@ -72,6 +72,37 @@
                 margin-bottom: 1rem;
             }
         }
+    }
 
+
+    .service-items {
+        margin-block: 10vh;
+        background: #fff;
+        border-radius: 0.5rem;
+        // box-shadow: abstracts.$box-shadow-sm;
+        box-shadow: 0.125rem 0.75rem 0.5rem #0003;
+        // overflow: hidden;
+        
+        .service-item {
+            position: relative;
+            
+            h4 {
+                padding: 0.5rem;
+                color: abstracts.$brand;
+            }
+
+            .content-container {
+                ul {
+                    list-style: none;
+                    li {
+                        padding: 0.5rem;
+                        text-transform: capitalize;
+                    }
+                    :nth-child(even) {
+                        background-color: hsl(0, 0%, 85%);
+                    }
+                }
+            }
+        }
     }
 }
