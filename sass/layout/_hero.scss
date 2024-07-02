@@ -93,6 +93,9 @@
 
     @include abstracts.lg {
         padding: 0.5rem;
+        &::after {
+            display: none;
+        }
     }
 
     h1 {

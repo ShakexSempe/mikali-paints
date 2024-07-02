@@ -1565,6 +1565,9 @@ aside.active .social-links a {
   .hero-title {
     padding: 0.5rem;
   }
+  .hero-title::after {
+    display: none;
+  }
 }
 .hero-title h1 {
   margin-bottom: 0.5rem;
