@@ -1629,6 +1629,9 @@ aside.active .social-links a {
 .menu-item:hover::after {
   opacity: 1;
 }
+.menu-item:hover .menu-title {
+  color: #eb2d53;
+}
 
 .menu-item-slogan {
   font-size: 0.975rem;
@@ -1642,6 +1645,7 @@ aside.active .social-links a {
   margin-bottom: 1.5rem;
   color: #a30f2d;
   font-weight: 500;
+  transition: 250ms ease;
 }
 .menu-title span {
   color: #000;

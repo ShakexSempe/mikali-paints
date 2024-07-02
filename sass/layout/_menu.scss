@@ -60,6 +60,10 @@
         transform: scale(1.0125);
         &::before {opacity: 0;}
         &::after {opacity: 1;}
+
+        .menu-title {
+            color: abstracts.$brand-light;
+        }
     }
     
 }
@@ -76,6 +80,7 @@
     margin-bottom: 1.5rem;
     color: abstracts.$brand;
     font-weight: 500;
+    transition: 250ms ease;
     
     span {
         color: abstracts.$text-main;
