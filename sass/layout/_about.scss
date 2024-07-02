@@ -7,9 +7,7 @@
     
     @include abstracts.lg {
         padding: 10vh 10vw;
-        background: linear-gradient(90deg, #fff 45%, transparent 60%);
-
-        // background-color: #fff5;
+        background: linear-gradient(90deg, #fff 55%, transparent 75%);
         
         // PSEUDO BG
         &::after {
@@ -26,6 +24,7 @@
             // opacity: .5;
 
         }
+        
     }
 
 }
@@ -33,7 +32,7 @@
 .about-article {
     p {
         margin-bottom: 1.5rem;
-        max-width: 600px;
+        max-width: 500px;
     }
 
     a {

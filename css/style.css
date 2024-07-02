@@ -421,7 +421,7 @@ img {
   border: none;
   border-radius: 0.5rem;
   z-index: -1;
-  transition: 0.3s;
+  transition: 300ms linear;
 }
 .cta-btn::before {
   background: linear-gradient(0deg, #a30f2d, #eb2d53);
@@ -722,7 +722,7 @@ img {
 @media (min-width: 820px) {
   .about {
     padding: 10vh 10vw;
-    background: linear-gradient(90deg, #fff 45%, transparent 60%);
+    background: linear-gradient(90deg, #fff 55%, transparent 75%);
   }
   .about::after {
     content: "";
@@ -740,7 +740,7 @@ img {
 
 .about-article p {
   margin-bottom: 1.5rem;
-  max-width: 600px;
+  max-width: 500px;
 }
 .about-article a {
   text-transform: capitalize;
