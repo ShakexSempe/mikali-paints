@@ -2,11 +2,14 @@
 
 // SERVICES SECTION
 .services {
-    border: 1px solid red;
+    // border: 1px solid red;
     background-color: #f4f4f4;
+    background-color: hsl(0, 0%, 90%);
     padding: 10vh 5vw;
     position: relative;
     isolation: isolate;
+    height: 95vh;
+    width: 100%;
 
     @include abstracts.md {
         padding: 10vw 10vw;
@@ -25,8 +28,50 @@
         }
     }
 
-
-    
-
 }
 
+
+.service-section {
+    // border: 2px solid blue;
+    position: relative;
+    .service-title {
+        max-width: 400px;
+        h3 {
+            font-size: abstracts.$font-clamp-xlg;
+            color: abstracts.$brand;
+            margin-bottom: 10vh;
+            // max-width: 100px;
+        }
+    
+        .service-title-img {
+            position: absolute;
+            right: 5vw;
+            top: 5vh;
+            rotate: -30deg;
+            filter: drop-shadow(-1rem 1rem 0.125rem hsla(0, 100%, 25%, 0.25));
+            animation: brush 5000ms infinite;
+
+            @include abstracts.lg {
+                right: 50%;
+                transform: scale(1.5);
+            }
+
+            @keyframes brush {
+                50% {
+                    rotate: -15deg;
+                    translate: 0 1rem;
+                    filter: drop-shadow(-1rem 1rem 2rem hsla(0, 100%, 25%, 1));
+                }
+            }
+        }
+
+        .service-cta-container {
+            h4 {
+                text-transform: uppercase;
+                font-size: abstracts.$font-clamp-sm;
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+}

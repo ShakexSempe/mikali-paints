@@ -1906,11 +1906,13 @@ aside.active .social-links a {
 }
 
 .services {
-  border: 1px solid red;
   background-color: #f4f4f4;
+  background-color: #e6e6e6;
   padding: 10vh 5vw;
   position: relative;
   isolation: isolate;
+  height: 95vh;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .services {
@@ -1925,6 +1927,44 @@ aside.active .social-links a {
   .services P {
     color: #ddd;
   }
+}
+
+.service-section {
+  position: relative;
+}
+.service-section .service-title {
+  max-width: 400px;
+}
+.service-section .service-title h3 {
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+  color: #a30f2d;
+  margin-bottom: 10vh;
+}
+.service-section .service-title .service-title-img {
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+  rotate: -30deg;
+  filter: drop-shadow(-1rem 1rem 0.125rem rgba(128, 0, 0, 0.25));
+  animation: brush 5000ms infinite;
+}
+@media (min-width: 820px) {
+  .service-section .service-title .service-title-img {
+    right: 50%;
+    transform: scale(1.5);
+  }
+}
+@keyframes brush {
+  50% {
+    rotate: -15deg;
+    translate: 0 1rem;
+    filter: drop-shadow(-1rem 1rem 2rem maroon);
+  }
+}
+.service-section .service-title .service-cta-container h4 {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  margin-bottom: 1rem;
 }
 
 @keyframes card-hover {
