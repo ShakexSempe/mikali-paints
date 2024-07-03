@@ -1617,20 +1617,20 @@ aside.active .social-links a {
   border-radius: 0.5rem;
   isolation: isolate;
   position: relative;
-  transition: 250ms;
+  transition: 350ms;
 }
 .menu-item::after, .menu-item::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  transition: 250ms ease;
+  transition: 350ms ease;
   z-index: -1;
 }
 .menu-item::before {
   background-color: #fcfcfc;
   box-shadow: 0 0.25rem 0.5rem #0002;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.115);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .menu-item::after {
   background-color: #ffff;
@@ -1962,20 +1962,20 @@ aside.active .social-links a {
   right: 5vw;
   top: 5vh;
   rotate: -30deg;
-  filter: drop-shadow(-1rem 1rem 1.75rem maroon);
-  animation: brush 5000ms infinite;
+  filter: drop-shadow(-1rem 1rem 1.75rem rgba(163, 15, 45, 0.75));
+  animation: brush 5500ms infinite;
+  transform-style: preserve-3d;
 }
 @media (min-width: 820px) {
   .service-section .service-title .service-title-img {
-    right: 50%;
-    transform: scale(1.5);
+    display: none;
   }
 }
 @keyframes brush {
   50% {
     rotate: 0deg;
     translate: 0 1rem;
-    filter: drop-shadow(-0.5rem 0.5rem 0.125rem rgba(128, 0, 0, 0.25));
+    filter: drop-shadow(-0.5rem 0.5rem 0.125rem rgba(163, 15, 45, 0.25));
   }
 }
 .service-section .service-title .service-cta-container h4 {
@@ -1984,20 +1984,21 @@ aside.active .social-links a {
   margin-bottom: 1rem;
 }
 .service-section .service-items {
-  margin-block: 5vh;
+  margin-block: 10vh;
   display: grid;
   gap: 5vh;
 }
 @media (min-width: 768px) {
   .service-section .service-items {
     grid-template-columns: repeat(2, 1fr);
+    margin-block: 5vh;
   }
 }
 .service-section .service-items .service-item {
   border-radius: 0.5rem;
   background: #fff;
   position: relative;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25), 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.115);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .service-section .service-items .service-item h4 {
   padding: 0.5rem;

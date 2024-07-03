@@ -4,7 +4,7 @@ $btn-md : clamp(11rem, 15vw, 11rem);
 $btn-lg : clamp(12rem, 15vw, 13rem);
 
 $brand: #dc143c;
-$brand: #a30f2d;
+$brand: hsl(348, 83%, 35%);
 $brand-red: #dc143c;
 $brand-dark: #d2143a;
 $brand-light: hsl(348, 83%, 55%);
@@ -48,10 +48,15 @@ $nav-links: hsl(0, 0%, 90%);
 $nav-icons: #fff9;
 $active-nav-icon: #f4f4f4;
 
-$box-shadow-sm: inset 2px 2px 2px rgba(255, 255, 255, 0.250),
+
+$button-shadow-sm: inset 2px 2px 2px rgba(255, 255, 255, 0.250),
                 inset -2px -2px 2px rgba(0, 0, 0, 0.250),
                 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.115);
 
-$box-shadow-sm-hover: inset 2px 2px 2px rgba(0, 0, 0, 0.250),
-                    inset -2px -2px 2px rgba(255, 255, 255, 0.152),
-                    0.125rem 0.35rem 0.35rem rgba(0, 0, 0, 0.200);
+$button-shadow-sm-hover: inset 2px 2px 2px rgba(0, 0, 0, 0.250),
+                            inset -2px -2px 2px rgba(255, 255, 255, 0.152),
+                            0.125rem 0.35rem 0.35rem rgba(0, 0, 0, 0.200);
+
+$box-shadow-sm: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
+
+$box-shadow-sm-hover: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.025);

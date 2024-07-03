@@ -33,14 +33,14 @@
     border-radius: 0.5rem;
     isolation: isolate;
     position: relative;
-    transition: 250ms;
+    transition: 350ms;
 
     &::after, &::before {
         content: '';
         position: absolute;
         inset: 0;
         border-radius: inherit;
-        transition: 250ms ease;
+        transition: 350ms ease;
         z-index: -1;
     }
 

@@ -115,13 +115,13 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
 
     &::before {
         background: abstracts.$brand-btn;
-        box-shadow: abstracts.$box-shadow-sm;
+        box-shadow: abstracts.$button-shadow-sm;
     }
 
     &::after {
         opacity: 0;
         background: abstracts.$brand-btn-hover;
-        box-shadow: abstracts.$box-shadow-sm-hover;
+        box-shadow: abstracts.$button-shadow-sm-hover;
     }
 
     // MOBILE CLICK STYLE

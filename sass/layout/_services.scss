@@ -50,19 +50,19 @@
             right: 5vw;
             top: 5vh;
             rotate: -30deg;
-            filter: drop-shadow(-1rem 1rem 1.75rem hsla(0, 100%, 25%, 1));
-            animation: brush 5000ms infinite;
+            filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 35%, 0.75));
+            animation: brush 5500ms infinite;
+            transform-style: preserve-3d;
 
             @include abstracts.lg {
-                right: 50%;
-                transform: scale(1.5);
+                display: none;
             }
 
             @keyframes brush {
                 50% {
                     rotate: 0deg;
                     translate: 0 1rem;
-                    filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(0, 100%, 25%, 0.25));
+                    filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 35%, 0.25));
                 }
             }
         }
@@ -78,17 +78,14 @@
 
 
     .service-items {
-        margin-block: 5vh;
-        // background: #fff;
-        // box-shadow: abstracts.$box-shadow-sm;
-        // box-shadow: 0.125rem 0.75rem 0.5rem #0003;
-        // overflow: hidden;
+        margin-block: 10vh;
         display: grid;
         gap: 5vh;
         
-
         @include abstracts.md {
             grid-template-columns: repeat(2, 1fr);
+            margin-block: 5vh;
+
         }
 
         .service-item {
@@ -121,4 +118,5 @@
         }
 
     }
+
 }
