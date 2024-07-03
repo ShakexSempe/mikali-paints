@@ -1,7 +1,7 @@
 @use '../abstracts';
 
 .about {
-    padding: 5vh 5vw 0;
+    padding: 5vh 5vw;
     isolation: isolate;
     position: relative;
     
@@ -24,6 +24,18 @@
             // opacity: .5;
 
         }
+        @include abstracts.dark {
+            color: #eee;
+            background: #161616;
+            &::after {
+                opacity: .5;
+            }
+        }
+    }
+
+    @include abstracts.dark {
+        color: #eee;
+        background-color: #161616;
         
     }
 
@@ -33,6 +45,11 @@
     p {
         margin-bottom: 1.5rem;
         max-width: 500px;
+        
+        @include abstracts.dark {
+            color: abstracts.$text-light-trans;
+        }
+
     }
 
     a {

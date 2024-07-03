@@ -41,6 +41,7 @@
 
         @include abstracts.dark {
             background-color: #000;
+            background-color: transparent;
         }
 
     }
@@ -141,15 +142,16 @@
         &::after {
             background-color: #fff;
             box-shadow:  0rem .25rem 1rem rgba(0, 0, 0, .05);
-            transition: box-shadow .5s ease, background-color 125ms;
-            
-            @include abstracts.dark {
-                background-color: #000;
-            }
-
+            transition: box-shadow 5000ms ease, background-color 125ms;
         }
-        
 
+        @include abstracts.dark {
+            color: abstracts.$text-second;
+            
+            &::after {
+            background-color: #000;
+            }
+        }
     }
     
 }
@@ -175,7 +177,7 @@
         color: abstracts.$brand-dark;
     }
 
-        
+    
 
     
     &:active {
@@ -237,6 +239,10 @@
                             &::after {
                                 transform: translateX(-50%) scale(1);
                             }
+                        }
+
+                        @include abstracts.dark {
+                            color: abstracts.$text-second;
                         }
                     }
                 }

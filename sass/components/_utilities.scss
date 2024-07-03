@@ -52,6 +52,16 @@
             }
         }
     }
+
+    // TOGGLE BAR DARK MODE
+    @include abstracts.dark {
+        .bar {
+            background-color: #ddd;
+            &::before, &::after {
+                background-color: #ddd;
+            }
+        }
+    }
 }
 
 

@@ -51,11 +51,6 @@ main {
     }
 }
 
-section {
-
-    @include abstracts.md {
-    }
-}
 
 .section-title {
     text-transform: capitalize;
@@ -188,9 +183,9 @@ p {
     line-height: 1.8;
     text-wrap: pretty;
 
-    @include abstracts.dark {
-        color: #ddd;
-    }
+    // @include abstracts.dark {
+    //     color: #ddd;
+    // }
 }
 
 a {

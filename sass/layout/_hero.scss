@@ -28,6 +28,10 @@
         align-items: center;
         padding: 10vh 10vw 5vh;
 
+        @include abstracts.dark {
+            background: hsl(0, 0%, 90%);
+        }
+
     }
 
     // HERO ACTIVE BACKGROUND CLASS

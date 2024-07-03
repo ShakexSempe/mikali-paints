@@ -12,6 +12,9 @@
     @include abstracts.dark {
         background: #333;
         color: #f4f4f4;
+        p {
+            color: inherit;
+        }
     }
 
 
@@ -22,6 +25,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
+
+        @include abstracts.dark {
+            background: #333;
+        }
     }
     a {
         text-decoration: none;

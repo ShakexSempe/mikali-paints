@@ -13,15 +13,10 @@
 
     @include abstracts.md {
         padding: 10vw 10vw;
-
-        // background-image: url('../../img/hero-600.jpg');
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
     }
 
     @include abstracts.dark {
-        background: #000;
+        background: #222;
         color: #f4f4f4;
         P {
             color: #ddd;
@@ -97,6 +92,9 @@
             h4 {
                 padding: 0.5rem;
                 color: abstracts.$brand;
+                @include abstracts.dark {
+                    color: abstracts.$brand-light;
+                }
             }
 
             .content-container {
@@ -112,9 +110,20 @@
                     }
                     :nth-child(even) {
                         background-color: hsl(0, 0%, 85%);
+                        @include abstracts.dark {
+                            background-color: #222;
+                            
+                        }
                     }
                 }
             }
+
+
+            @include abstracts.dark {
+                background-color: #000;
+                
+            }
+
         }
 
     }

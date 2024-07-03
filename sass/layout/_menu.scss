@@ -23,6 +23,10 @@
         place-items: center;
         align-items: start;
     }
+
+    @include abstracts.dark {
+        background-color: #000;
+    }
 }
 
 // GRID ITEM
@@ -66,6 +70,25 @@
         }
     }
     
+
+    @include abstracts.dark {
+        background-color: #000;
+        color: abstracts.$text-light;
+
+        .menu-title span {
+            color: abstracts.$text-light;
+        }
+        p {
+            color: inherit;
+        }
+
+        &::before {
+            background-color: #222;
+        }
+        &::after {
+            background-color: #333;
+        }
+    }
 }
 
 .menu-item-slogan {
@@ -104,6 +127,9 @@
     a {
         text-decoration-color: hsl(0, 0%, 95%);
         text-underline-offset: 3px;
+        @include abstracts.dark {
+            text-decoration-color: transparent;
+        }
     }
 
 

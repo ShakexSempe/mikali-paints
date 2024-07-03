@@ -11,7 +11,7 @@
 
         // DARK-THEME 
         @include abstracts.dark {
-            background-color: #000;
+            background-color: hsl(0, 0%, 10%);
             color: #f4f4f4;
             min-height: 70vh;   
         }
@@ -26,6 +26,10 @@
             background-image: url('../../img/mikali-logo-copy.jpg');
             background-repeat: no-repeat;
             background-position: right;
+
+            @include abstracts.dark {
+                background-image: none;
+            }
         }
 
     }
@@ -48,15 +52,23 @@
         top: 10vh;
         z-index: -2;
         mix-blend-mode: darken;
+        border-radius: 0.5rem;
 
         @include abstracts.sm {
             top: 0;
         }
 
-        @include abstracts.lg {
+        
+        @include abstracts.dark {
+            mix-blend-mode: normal;
+            opacity: .95;
+            position: relative;
+            top: unset;
+        }
+        
+        @include abstracts.sm {
             display: none;
         }
-
     }
 
     // ABOUT ARTICLE
@@ -67,11 +79,13 @@
         // border: 2px solid red;
         max-width: 550px;
         background: abstracts.$bg-main-trans;
+        
 
-        @include abstracts.lg {
-            // padding: 1rem 1rem 1rem 0;
-            // border-radius: 1rem;
-            // background: abstracts.$bg-main;
+        @include abstracts.dark {
+            background: inherit;
+            p {
+                color: abstracts.$text-light-trans;
+            }
         }
 
         h3 {
