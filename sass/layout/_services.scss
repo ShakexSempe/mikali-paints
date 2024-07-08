@@ -46,7 +46,7 @@
             right: 5vw;
             top: 5vh;
             rotate: -30deg;
-            filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 35%, 0.75));
+            filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 15%, 0.75));
             animation: brush 5500ms infinite;
             transform-style: preserve-3d;
 
@@ -130,5 +130,4 @@
     }
 
 }
-
 

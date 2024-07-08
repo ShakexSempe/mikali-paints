@@ -3,8 +3,9 @@
 // PROJECTS SECTION
 #projects {
 
-    background-color: hsl(0, 0%, 40%);
+    // background-color: hsl(0, 0%, 40%);
     // background-color: yellow;
+    background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 40%));
     padding: 5vh 5vw;
 
     @include abstracts.md {
@@ -17,7 +18,6 @@
     }
 
     .projects-container {
-        // border: 1px solid red;
         // background-color: #fafafa;
         margin: 10vh auto;
         display: grid;
@@ -55,11 +55,12 @@
         &:hover {
 
             figure {
-                opacity: .65;
+                opacity: 0.65;
             }
 
             figure {
                 &:has(img:hover){
+                    border: 2px solid abstracts.$brand-light;
                     opacity: 1;
                 }
             } 
