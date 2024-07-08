@@ -1931,7 +1931,7 @@ aside.active .social-links a {
   opacity: 0.65;
 }
 #projects .projects-container:hover figure:has(img:hover) {
-  border: 2px solid #eb2d53;
+  border: 1px solid #eb2d53;
   opacity: 1;
 }
 #references {
@@ -2109,7 +2109,6 @@ aside.active .social-links a {
 }
 .service-section .service-items .service-item h4 {
   padding: 0.5rem;
-  color: #a30f2d;
 }
 @media (prefers-color-scheme: dark) {
   .service-section .service-items .service-item h4 {

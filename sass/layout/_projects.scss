@@ -60,7 +60,7 @@
 
             figure {
                 &:has(img:hover){
-                    border: 2px solid abstracts.$brand-light;
+                    border: 1px solid abstracts.$brand-light;
                     opacity: 1;
                 }
             } 

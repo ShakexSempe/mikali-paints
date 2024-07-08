@@ -92,7 +92,7 @@
             
             h4 {
                 padding: 0.5rem;
-                color: abstracts.$brand;
+                // color: abstracts.$brand;
                 @include abstracts.dark {
                     color: abstracts.$brand-light;
                 }
