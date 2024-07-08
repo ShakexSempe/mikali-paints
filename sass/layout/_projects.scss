@@ -3,10 +3,16 @@
 // PROJECTS SECTION
 #projects {
 
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 40%);
+    // background-color: yellow;
+    padding: 5vh 5vw;
+
+    @include abstracts.md {
+        padding: 5vh 10vw;
+    }
 
     @include abstracts.dark {
-        background-color: #222;
+        background-color: #111;
         color: #f4f4f4;
     }
 
@@ -15,38 +21,79 @@
         // background-color: #fafafa;
         margin: 10vh auto;
         display: grid;
-        gap: 10vh;
+        // gap: 10vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10rem 15rem 10rem;
+        // row-gap: 1rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
 
-        
         @include abstracts.md {
             grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 50vh);
         }
 
-        @include abstracts.lg {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 5vw;
+        figure {
+            overflow: hidden;
+            transition: 250ms;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: 250ms;
+                
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+
+
         }
+
+        &:hover {
+
+            figure {
+                opacity: .65;
+            }
+
+            figure {
+                &:has(img:hover){
+                    opacity: 1;
+                }
+            } 
+
+        }
+        
+        
+
+        // @include abstracts.lg {
+        //     grid-template-columns: repeat(3, 1fr);
+        //     gap: 5vw;
+        // }
     }
     
     .project-item {
         // border: 1px solid blue;
-        background-color: #fff;
-        overflow: hidden;
-        border-radius: 0.25rem;
-        box-shadow: 0.125rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
-        max-width: 450px;
+        // background-color: #fff;
+        // overflow: hidden;
+        // border-radius: 0.25rem;
+        // box-shadow: 0.125rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
+        // max-width: 450px;
 
-        .project-details {
-            padding: 0.5rem;
+        // .project-details {
+        //     padding: 0.5rem;
 
-            h3 {
-                // text-transform: uppercase;
-            }
-        }
+        //     h3 {
+        //         // text-transform: uppercase;
+        //     }
+        // }
 
-        img {
-            max-height: 40vh;
-        }
+        // img {
+        //     max-height: 40vh;
+        // }
+
     }
 
 }

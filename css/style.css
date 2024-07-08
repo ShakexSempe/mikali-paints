@@ -1886,44 +1886,53 @@ aside.active .social-links a {
 }
 
 #projects {
-  background-color: #e6e6e6;
+  background-color: #666666;
+  padding: 5vh 5vw;
+}
+@media (min-width: 768px) {
+  #projects {
+    padding: 5vh 10vw;
+  }
 }
 @media (prefers-color-scheme: dark) {
   #projects {
-    background-color: #222;
+    background-color: #111;
     color: #f4f4f4;
   }
 }
 #projects .projects-container {
   margin: 10vh auto;
   display: grid;
-  gap: 10vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem 15rem 10rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #projects .projects-container {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 50vh);
   }
 }
-@media (min-width: 820px) {
-  #projects .projects-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5vw;
-  }
-}
-#projects .project-item {
-  background-color: #fff;
+#projects .projects-container figure {
   overflow: hidden;
-  border-radius: 0.25rem;
-  box-shadow: 0.125rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
-  max-width: 450px;
+  transition: 250ms;
 }
-#projects .project-item .project-details {
-  padding: 0.5rem;
+#projects .projects-container figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 250ms;
 }
-#projects .project-item img {
-  max-height: 40vh;
+#projects .projects-container figure img:hover {
+  transform: scale(1.05);
 }
-
+#projects .projects-container:hover figure {
+  opacity: 0.65;
+}
+#projects .projects-container:hover figure:has(img:hover) {
+  opacity: 1;
+}
 #references {
   background: linear-gradient(90deg, #333333, #404040, #333333);
   background: linear-gradient(-30deg, #a30f2d, #eb2d53, #a30f2d);
