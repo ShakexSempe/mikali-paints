@@ -11,6 +11,22 @@
     
     label {
         text-transform: capitalize;
+        font-weight: 500;
+    }
+
+    select {
+        display: block;
+        margin: 0.5rem 0 1.5rem;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        width: 30vw;
+        padding: 0.25rem;
+        text-transform: capitalize;
+
+    }
+    
+    option {
+        
     }
 
     input, textarea {
