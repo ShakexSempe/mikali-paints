@@ -41,10 +41,10 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                transition: 250ms;
+                transition: 350ms;
                 
                 &:hover {
-                    transform: scale(1.05);
+                    transform: scale(1.075);
                 }
 
             }
@@ -55,7 +55,7 @@
         &:hover {
 
             figure {
-                opacity: 0.65;
+                opacity: 0.45;
             }
 
             figure {

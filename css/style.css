@@ -1787,13 +1787,13 @@ aside.active .social-links a {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: 250ms;
+  transition: 350ms;
 }
 #projects .projects-container figure img:hover {
-  transform: scale(1.05);
+  transform: scale(1.075);
 }
 #projects .projects-container:hover figure {
-  opacity: 0.65;
+  opacity: 0.45;
 }
 #projects .projects-container:hover figure:has(img:hover) {
   border: 1px solid #eb2d53;
