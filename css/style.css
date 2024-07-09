@@ -210,7 +210,7 @@ img {
   z-index: 5;
   bottom: 0;
   height: auto;
-  height: 7vh;
+  height: 6vh;
   width: 100%;
   padding: 0.25rem 5vw;
   background: #000;
@@ -968,10 +968,10 @@ img {
 
 #header {
   position: fixed;
-  height: 7vh;
+  height: 6vh;
   top: 0;
   width: 100%;
-  padding: 0.5rem 5vw;
+  padding: 0.25rem 5vw;
   background-color: transparent;
   display: flex;
   align-items: center;
