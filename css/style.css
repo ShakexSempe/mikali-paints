@@ -192,7 +192,7 @@ a:hover:not(.cta-btn, .skip-link, .logo), a:focus:not(.cta-btn, .skip-link, .log
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7vh;
+  scroll-padding-top: 6vh;
 }
 @media (min-width: 768px) {
   html {

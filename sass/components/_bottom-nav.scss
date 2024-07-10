@@ -109,11 +109,13 @@
 
         }
     }
+    
     // DESKTOP NAV STYLE
     @include abstracts.md {
         display: none;
         // border-right: 1px solid #0002;
     }
+
     // FOOTER NAV IO
     &.active-footer {
         transform: translateY(0);
@@ -147,6 +149,7 @@
             }
         }
     }
+
     &.menu-footer {
         .item {
             &.menu-target {

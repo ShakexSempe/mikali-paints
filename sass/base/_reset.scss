@@ -9,7 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 7vh;
+    scroll-padding-top: 6vh;
 
     @include abstracts.md {
         scroll-padding-top: 8vh;
