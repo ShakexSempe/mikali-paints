@@ -89,12 +89,14 @@
             border-radius: 0.5rem;
             background: #fff;
             position: relative;
-            box-shadow: abstracts.$box-shadow-sm;
             
+            @include abstracts.item-bg;
+
             h4 {
                 padding: 0.5rem;
                 text-transform: uppercase;
                 font-weight: 500;
+                transition: 250ms ease;
                 // color: abstracts.$brand;
                 
                 @include abstracts.dark {
@@ -128,7 +130,19 @@
 
             @include abstracts.dark {
                 background-color: #000;
+            }
+
+            &:hover {
                 
+                h4 {
+                    color: abstracts.$brand;
+
+                    @include abstracts.dark {
+                        color: abstracts.$brand-light;
+                    }
+
+                }
+
             }
 
         }

@@ -1,5 +1,11 @@
 @use './variables';
 
+// BREAK POINTS
+$screen-xsm-max: 390px;
+$screen-sm-min: 500px;
+$screen-md-min: 768px;
+$screen-lg-min: 820px;
+$screen-xlg-min: 1024px;
 
 // DARK MODE
 @mixin dark {
@@ -8,18 +14,49 @@
     }
 }
 
-// BREAK POINTS
-$screen-xsm-max: 390px;
-$screen-sm-min: 500px;
-$screen-md-min: 768px;
-$screen-lg-min: 820px;
-$screen-xlg-min: 1024px;
+// ITEM BG
+@mixin item-bg {
+    position: relative;
+    transition: 350ms ease;
+    // ITEM BG
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        transition: 350ms ease;
+        z-index: -1;
+    }
+
+    &::before {
+        background-color: red;
+        background-color: hsl(0, 0%, 99%);
+        box-shadow: 0 0.25rem 0.5rem #0002;
+        box-shadow: variables.$box-shadow-sm;
+    }
+
+    &::after {
+        background-color: blue;
+        background-color: #ffff;
+        box-shadow: 0 0.5rem 1rem #0002;
+        opacity: 0;
+    }
+
+    &:hover {
+        transform: scale(1.0125);
+        &::before {opacity: 0;}
+        &::after {opacity: 1;}
+    }
+}
+
+
 // EXTRA SMALL DEVICES 
 @mixin xsm {
     @media (max-width: #{$screen-xsm-max}) {
         @content;
     }
 }
+
 //SMALL DEVICES 
 @mixin sm {
     @media (min-width: #{$screen-sm-min}) {
@@ -64,6 +101,7 @@ $screen-xlg-min: 1024px;
     grid-template-columns: repeat($columns, 1fr);
     @content
 }
+
 
 
 

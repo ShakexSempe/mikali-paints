@@ -39,31 +39,10 @@
     position: relative;
     transition: 350ms;
 
-    &::after, &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        transition: 350ms ease;
-        z-index: -1;
-    }
+    @include abstracts.item-bg;
 
-    &::before {
-        background-color: hsl(0, 0%, 99%);
-        box-shadow: 0 0.25rem 0.5rem #0002;
-        box-shadow: abstracts.$box-shadow-sm;
-    }
-
-    &::after {
-        background-color: #ffff;
-        box-shadow: 0 0.5rem 1rem #0002;
-        opacity: 0;
-    }
 
     &:hover {
-        transform: scale(1.0125);
-        &::before {opacity: 0;}
-        &::after {opacity: 1;}
 
         .menu-title {
             color: abstracts.$brand-light;
