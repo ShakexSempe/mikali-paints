@@ -35,10 +35,12 @@
         max-width: 400px;
         h3 {
             font-size: abstracts.$font-clamp-xlg;
-            color: abstracts.$brand;
             margin-bottom: 5vh;
-            line-height: 1.4;
-            // max-width: 100px;
+            line-height: 1.2;
+            
+            span {
+                color: abstracts.$brand;
+            }
         }
     
         .service-title-img {
@@ -46,7 +48,7 @@
             right: 5vw;
             top: 5vh;
             rotate: -30deg;
-            filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 15%, 0.75));
+            filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 10%, 0.75));
             animation: brush 5500ms infinite;
             transform-style: preserve-3d;
 
@@ -58,7 +60,7 @@
                 50% {
                     rotate: 0deg;
                     translate: 0 1rem;
-                    filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 35%, 0.25));
+                    filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 15%, 0.25));
                 }
             }
         }
@@ -81,7 +83,6 @@
         @include abstracts.md {
             grid-template-columns: repeat(2, 1fr);
             margin-block: 5vh;
-
         }
 
         .service-item {
@@ -92,22 +93,27 @@
             
             h4 {
                 padding: 0.5rem;
+                text-transform: uppercase;
+                font-weight: 500;
                 // color: abstracts.$brand;
+                
                 @include abstracts.dark {
-                    color: abstracts.$brand-light;
+                    // color: abstracts.$brand-light;
                 }
+
             }
 
             .content-container {
                 ul {
                     list-style: none;
-                    padding: 0.5rem;
+                    padding: 0.25rem;
                     li {
                         padding: 0.25rem;
                         border-radius: 0.125rem;
                         text-transform: capitalize;
                         font-size: 0.9rem;
-                        font-size: abstracts.$font-clamp-xsm
+                        font-size: abstracts.$font-clamp-xsm;
+                        color: abstracts.$text-main-light;
                     }
                     :nth-child(even) {
                         background-color: hsl(0, 0%, 85%);
