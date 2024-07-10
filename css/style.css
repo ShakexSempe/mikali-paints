@@ -2022,6 +2022,7 @@ aside.active .social-links a {
   text-transform: uppercase;
   font-weight: 500;
   transition: 250ms ease;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .service-section .service-items .service-item .content-container ul {
   list-style: none;
