@@ -42,26 +42,27 @@
                 width: 100%;
                 object-fit: cover;
                 transition: 350ms;
-                
                 &:hover {
                     transform: scale(1.075);
                 }
 
             }
 
-
         }
 
         &:hover {
 
             figure {
-                opacity: 0.45;
+                img {
+                    filter: grayscale(1);
+                }
             }
 
             figure {
                 &:has(img:hover){
-                    border: 1px solid abstracts.$brand-light;
-                    opacity: 1;
+                    img {
+                        filter: grayscale(0);
+                    }
                 }
             } 
 

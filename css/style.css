@@ -1805,12 +1805,11 @@ aside.active .social-links a {
 #projects .projects-container figure img:hover {
   transform: scale(1.075);
 }
-#projects .projects-container:hover figure {
-  opacity: 0.45;
+#projects .projects-container:hover figure img {
+  filter: grayscale(1);
 }
-#projects .projects-container:hover figure:has(img:hover) {
-  border: 1px solid #eb2d53;
-  opacity: 1;
+#projects .projects-container:hover figure:has(img:hover) img {
+  filter: grayscale(0);
 }
 #references {
   background: linear-gradient(90deg, #333333, #404040, #333333);
