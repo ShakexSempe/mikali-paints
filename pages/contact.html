@@ -181,88 +181,56 @@
         <!-- MAIN -->
         <main class="main index-main" id="main" >
 
-            <div class="menu-container">
-
-                <!-- MENU-ITEM - PAINTING -->
-                <div class="menu-item">
-                    <!-- ITEM TITLE -->
-                    <h2 class="menu-title">painting services <span>residential & commercial</span> </h2>
-
-                    <!-- ITEM ICON -->
-                    <img class="menu-icon" src="../icons/services/icons8-paint-roller-64.png" width="64" height="64" alt="paint roller">
-                    
-                    <!-- ITEM SLOGAN -->
-                    <p class="menu-item-slogan">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque voluptatibus blanditiis dolorem in est voluptatem explicabo omnis tempora. Sit.
-                    </p>
-
-                    <div class="menu-item-cta">
-                        <img src="../icons/solid/icons8-outgoing-call-48-dark.png" width="48" height="48" alt="outgoing call icon" class="icon">
-                        <a href="tel:+27 61 898 4514">+27 61 898 4514</a>
-                    </div>
-                    <div class="menu-item-cta">
-                        <img src="../icons/solid/icons8-envelope-48-dark.png" width="48" height="48" alt="envelope icon" class="icon">
-                        <a href="tel:+27 61 898 4514">+27 61 898 4514</a>
-                    </div>
-
+            <!-- CONTACT SECTION -->
+            <section class="contact" id="contact">
+                
+                <div class="section-title">
+                    <h3>make enquiry</h3>
                 </div>
 
-                <!-- MENU-ITEM - CARPENTRY -->
-                <div class="menu-item">
-                    <!-- ITEM TITLE -->
-                    <h2 class="menu-title">carpentry <span>residential & commercial</span> </h2>
+                <!-- FORM -->
+                <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/mikalipaints@gmail.com"
+                    method="POST">
 
-                    <!-- ITEM ICON -->
-                    <img class="menu-icon" src="../icons/services/icons8-full-tool-storage-box-64.png" width="64" height="64" alt="paint roller">
-                    
-                    <!-- ITEM SLOGAN -->
-                    <p class="menu-item-slogan">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque voluptatibus blanditiis dolorem in est voluptatem explicabo omnis tempora. Sit.
-                    </p>
+                    <!-- NAME -->
+                    <label for="name">name :</label>
+                    <input type="text" tabindex="0" name="Name" id="username" placeholder="Enter your full name.." minlength="2"
+                        required>
+                    <!-- EMAIL -->
+                    <label for="email">email :</label>
+                    <input type="email" name="Email" id="email" placeholder="Enter your email address.." 
+                        required>
 
-                    <div class="menu-item-cta">
-                        <img src="../icons/solid/icons8-outgoing-call-48-dark.png" width="48" height="48" alt="outgoing call icon" class="icon">
-                        <a href="tel:+27 61 898 4514">+27 61 898 4514</a>
-                    </div>
-                    <div class="menu-item-cta">
-                        <img src="../icons/solid/icons8-envelope-48-dark.png" width="48" height="48" alt="envelope icon" class="icon">
-                        <a href="tel:+27 61 898 4514">+27 61 898 4514</a>
-                    </div>
+                    <!-- DROPDOWN  -->
+                    <label for="services">select service :</label>
+                    <select name="services" id="services">
+                        <option value="painting">painting</option>
+                        <option value="carpentry">carpentry</option>
+                        <option value="ceiling">ceiling</option>
+                        <option value="other">other</option>
+                    </select>
 
-                </div>
+                    <!-- TEXTAREA -->
+                    <label for="message">subject of enquiry :</label>
+                    <textarea name="Subject" rows="4" cols="10" minlength="2" placeholder="eg. Bathroom Set Installation"
+                        id="message" required></textarea>
 
-                <!-- MENU-ITEM - CEILING -->
-                <div class="menu-item">
-                    <!-- ITEM TITLE -->
-                    <h2 class="menu-title">ceiling <span>residential & commercial</span> </h2>
+                    <button type="submit" class="cta-btn btn-lg" title="submit form" >submit enquiry
+                        <img class="icon" src="../icons/contact/icons8-sent-100.png" alt="sent envelope" height="100" width="100" >
+                    </button>
 
-                    <!-- ITEM ICON -->
-                    <img class="menu-icon" src="../icons/services/icons8-pavilion-50.png" width="50" height="50" alt="ceiling">
-                    
-                    <!-- ITEM SLOGAN -->
-                    <p class="menu-item-slogan">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque voluptatibus blanditiis dolorem in est voluptatem explicabo omnis tempora. Sit.
-                    </p>
+                    <!-- form options -->
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse"
+                        value="We have has received your enquiry. We will be in touch shortly.Thank you.">
+                    <!-- <input type="hidden" name="_next" value="https://orichtrading/pages/thanks.html"> -->
+                    <input type="hidden" name="_template" value="box">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_cc" value="bshakex@gmail.com">
 
-                    <div class="menu-item-cta">
-                        <img src="../icons/solid/icons8-outgoing-call-48-dark.png" width="48" height="48" alt="outgoing call icon" class="icon">
-                        <a href="tel:+27 61 898 4514">+27 61 898 4514</a>
-                    </div>
-                    <div class="menu-item-cta">
-                        <img src="../icons/solid/icons8-envelope-48-dark.png" width="48" height="48" alt="envelope icon" class="icon">
-                        <a href="tel:+27 61 898 4514">+27 61 898 4514</a>
-                    </div>
 
-                </div>
-
-            </div>
-
-            <!-- SECTION : ABOUT -->
-            <section class="about">
-                <!-- PAINTING ARTICLE -->
-                <article class="about-article">
-
-                </article>
+                </form>
+                
             </section>
 
             <!-- FOOTER -->
