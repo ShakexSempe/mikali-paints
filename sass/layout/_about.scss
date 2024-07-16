@@ -24,6 +24,7 @@
             // opacity: .5;
 
         }
+
         @include abstracts.dark {
             color: #eee;
             background: #161616;
@@ -31,6 +32,11 @@
                 opacity: .5;
             }
         }
+
+        .about-article-img {
+            display: none;
+        }
+
     }
 
     @include abstracts.dark {
@@ -39,12 +45,15 @@
         
     }
 
+
+
 }
 
 .about-article {
+
     p {
         margin-bottom: 1.5rem;
-        max-width: 500px;
+        max-width: 550px;
         
         @include abstracts.dark {
             color: abstracts.$text-light-trans;
@@ -88,5 +97,28 @@
         }
         
     }
+
+}
+
+.about-article-img {
+    // height: 10rem;
+    // border: 2px solid abstracts.$brand;
+    margin: 1rem auto;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    max-height: 15rem;
+
+    img {
+        object-fit: cover;
+        transition: 350ms ease;
+    }
+
+    &:hover {
+
+        img {
+            transform: scale(1.05);
+        }
+
+    } 
 
 }
