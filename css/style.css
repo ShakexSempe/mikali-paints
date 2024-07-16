@@ -176,6 +176,10 @@ a:hover:not(.cta-btn, .skip-link, .logo), a:focus:not(.cta-btn, .skip-link, .log
   color: #a30f2d;
 }
 
+span {
+  color: #d2143a;
+}
+
 .icon {
   width: 1rem;
   width: clamp(1rem, 3vw, 1.0125rem);
@@ -1055,9 +1059,6 @@ img {
   .logo {
     cursor: pointer;
   }
-}
-.logo span {
-  color: #d2143a;
 }
 .logo:active {
   transform: scale(0.95);
