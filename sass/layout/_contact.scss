@@ -7,6 +7,17 @@
     // color: abstracts.$text-second;
     padding: 5vh 5vw 5vh;
 
+    @include abstracts.md {
+        padding: 5vh 10vw 10vh;
+        background-image: url('../../img/paint-brush.jpg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-position: 85% bottom;
+        background-attachment: fixed;
+        background-size: 10%;
+        background-size: contain;
+    }
+
     .section-title {
 
         h3 {
@@ -21,15 +32,13 @@
 #form {
     // min-height: 100vh;
     // border: 1px solid #0005;
+    max-width: 550px;
     background-color: #fff;
     padding: 0 0 5vh;
     border-radius: 0.25rem;
     padding: 0.75rem;
+    padding: 1rem;
     box-shadow: abstracts.$box-shadow-sm;
-    @include abstracts.md {
-        width: 50%;
-        margin: 0 auto;
-    }
     
     label {
         text-transform: capitalize;
@@ -51,6 +60,7 @@
         display: block;
         padding: 0.75rem;
         margin: 0.5rem 0 1.5rem;
+        margin: 0.5rem 0 1rem;
         width: 100%;
         border: none;
         outline: 1px solid abstracts.$brand;
@@ -62,7 +72,7 @@
         transition: 500ms;
         // DESKTOP PADDING
         @include abstracts.md {
-            padding: 1rem;
+            // padding: 0.5rem;
         }
 
         &:valid {
