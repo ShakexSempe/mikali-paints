@@ -2033,6 +2033,7 @@ aside.active .social-links a {
   position: relative;
   position: relative;
   transition: 350ms ease;
+  padding: 0.5rem;
 }
 .service-section .service-items .service-item::after, .service-section .service-items .service-item::before {
   content: "";
@@ -2064,7 +2065,6 @@ aside.active .social-links a {
   opacity: 1;
 }
 .service-section .service-items .service-item h4 {
-  padding: 0.5rem;
   text-transform: uppercase;
   font-weight: 500;
   transition: 250ms ease;
@@ -2073,7 +2073,7 @@ aside.active .social-links a {
 }
 .service-section .service-items .service-item .content-container ul {
   list-style: none;
-  padding: 0.25rem;
+  padding: 0.25rem 0;
 }
 .service-section .service-items .service-item .content-container ul li {
   padding: 0.25rem;
@@ -2082,6 +2082,7 @@ aside.active .social-links a {
   font-size: 0.9rem;
   font-size: clamp(.95rem, 1.25vw, 1.025rem);
   color: #161616;
+  background-color: #fafafa;
 }
 .service-section .service-items .service-item .content-container ul :nth-child(even) {
   background-color: #d9d9d9;

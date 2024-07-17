@@ -92,8 +92,8 @@
             
             @include abstracts.item-bg;
 
+            padding: 0.5rem;
             h4 {
-                padding: 0.5rem;
                 text-transform: uppercase;
                 font-weight: 500;
                 transition: 250ms ease;
@@ -110,7 +110,8 @@
             .content-container {
                 ul {
                     list-style: none;
-                    padding: 0.25rem;
+                    padding: 0.25rem 0;
+                    // padding: 0.5rem;
                     li {
                         padding: 0.25rem;
                         border-radius: 0.125rem;
@@ -118,7 +119,9 @@
                         font-size: 0.9rem;
                         font-size: abstracts.$font-clamp-xsm;
                         color: abstracts.$text-main-light;
+                        background-color: #fafafa;
                     }
+
                     :nth-child(even) {
                         background-color: hsl(0, 0%, 85%);
                         @include abstracts.dark {
@@ -126,6 +129,7 @@
                             
                         }
                     }
+
                 }
             }
 
