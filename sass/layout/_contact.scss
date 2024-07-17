@@ -4,8 +4,32 @@
     // border: 3px solid red;
     background: abstracts.$bg-main;
     background: hsl(0, 0%, 90%);
-    // color: abstracts.$text-second;
     padding: 5vh 5vw 5vh;
+    position: relative;
+    isolation: isolate;
+    // height: 200vh;
+
+    // MOBILE SCREENS PSEUDO BG IMG
+    &::after {
+        content: '';
+        position: absolute;
+        // position: sticky;
+        inset: 0;
+        // top: 6vh;
+        // border: 2px solid blue;
+        // width: 100%;
+        // height: 88vh;
+        background-image: url('../../img/paint-brush.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+
+        @include abstracts.md {
+            display: none;
+        }
+    }
+
 
     @include abstracts.md {
         padding: 5vh 10vw 10vh;
@@ -34,11 +58,16 @@
     // border: 1px solid #0005;
     max-width: 550px;
     background-color: #fff;
+    background-color: hsla(0, 0%, 100%, 0.75);
     padding: 0 0 5vh;
     border-radius: 0.25rem;
     padding: 0.75rem;
     padding: 1rem;
     box-shadow: abstracts.$box-shadow-sm;
+
+    @include abstracts.md {
+        background-color: #fff;
+    }
     
     label {
         text-transform: capitalize;
@@ -52,6 +81,8 @@
         border-radius: 0.25rem;
         width: 30vw;
         width:auto;
+        font-size: abstracts.$font-clamp-sm;
+        font-weight: 600;
         padding: 0.5rem 1rem 0.5rem 0.5rem;
         text-transform: capitalize;
     }
