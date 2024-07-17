@@ -28,7 +28,7 @@ toggle.addEventListener("click",  () => {
     // MAIN = OVERLAY , NAV = DISPLAY, HEADER = BLACK BG, REMOVE HERO HEADER  
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
-    // main.classList.toggle("active");
+    main.classList.toggle("active");
     // header.classList.remove("scroll");
     // header.classList.remove("hero-header");
     // header.classList.toggle("toggle-header");
@@ -36,6 +36,7 @@ toggle.addEventListener("click",  () => {
     console.log("open");
     // logo.classList.remove("active-logo");
 });
+
 // REMOVE ACTIVE CLASSES WHEN NAV LINKS CLICKED
 links.forEach(link => {
     link.addEventListener("click", () => {
@@ -47,6 +48,7 @@ links.forEach(link => {
         header.classList.remove("toggle-header");
     });
 });
+
 // REMOVE ACTIVE CLASSES WHEN AREA OUTSIDE MENU IS CLICKED
 main.addEventListener("click", () => {
     aside.classList.remove("active");
