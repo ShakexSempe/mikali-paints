@@ -23,7 +23,7 @@ main {
     &::after {
         position: fixed;
         content: '';
-        top: 5vh;
+        top: 6vh;
         left: 0;
         width: 100%;
         min-height: 100vh;
@@ -37,7 +37,7 @@ main {
         &::after {
             z-index: 1;
 
-            opacity: .7;
+            opacity: .57;
         }
     }
 
