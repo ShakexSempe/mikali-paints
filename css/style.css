@@ -1630,7 +1630,7 @@ aside.active .social-links a {
 
 .menu-title {
   font-size: 1.125rem;
-  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   margin-bottom: 1.5rem;
   color: #a30f2d;
   font-weight: 500;
@@ -1638,8 +1638,7 @@ aside.active .social-links a {
 }
 .menu-title span {
   color: #000;
-  text-transform: uppercase;
-  font-size: clamp(.95rem, 1.25vw, 1.025rem);
+  font-size: inherit;
   display: block;
 }
 

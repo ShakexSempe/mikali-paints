@@ -78,7 +78,7 @@
 
 .menu-title {
     font-size: 1.125rem;
-    font-size: abstracts.$font-clamp-md;
+    font-size: abstracts.$font-clamp-sm;
     margin-bottom: 1.5rem;
     color: abstracts.$brand;
     font-weight: 500;
@@ -86,8 +86,9 @@
     
     span {
         color: abstracts.$text-main;
-        text-transform: uppercase;
-        font-size: abstracts.$font-clamp-xsm;
+        // text-transform: uppercase;
+        // font-size: abstracts.$font-clamp-xsm;
+        font-size: inherit;
         display: block;
     }
 }
