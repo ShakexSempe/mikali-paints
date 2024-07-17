@@ -747,7 +747,7 @@ img {
 .contact {
   background: #fafafa;
   background: #e6e6e6;
-  padding: 5vh 5vw 5vh;
+  padding: 10vh 5vw;
   position: relative;
   isolation: isolate;
 }
