@@ -160,7 +160,7 @@ h3 {
 }
 
 p {
-  color: #161616;
+  color: #333;
   font-family: "Content", sans-serif;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.8;
@@ -1927,7 +1927,7 @@ aside.active .social-links a {
   margin-bottom: 0.75rem;
 }
 #references .references .reference p {
-  color: #161616;
+  color: #333;
   font-family: "Content", sans-serif;
 }
 #references .references .reference .card-item {
@@ -2082,7 +2082,7 @@ aside.active .social-links a {
   text-transform: capitalize;
   font-size: 0.9rem;
   font-size: clamp(.95rem, 1.25vw, 1.025rem);
-  color: #161616;
+  color: #333;
   background-color: #fafafa;
 }
 .service-section .service-items .service-item .content-container ul :nth-child(even) {
