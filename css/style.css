@@ -537,9 +537,10 @@ img {
   width: 30vw;
   width: auto;
   font-size: clamp(1rem, 2vw, 1.125rem);
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   text-transform: capitalize;
+  font-family: inherit;
 }
 #form input, #form textarea {
   display: block;
