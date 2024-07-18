@@ -1,2 +1,107 @@
 @use '../abstracts';
 
+#form {
+    // min-height: 100vh;
+    // border: 1px solid #0005;
+    max-width: 550px;
+    background-color: #fff000;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    padding: 0 0 5vh;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    padding: 1rem;
+    box-shadow: abstracts.$box-shadow-sm;
+
+    // DARK THEME
+    @include abstracts.dark {
+        background: #333;
+        color: abstracts.$text-second;
+    }
+
+    @include abstracts.md {
+        background-color: #fff;
+    }
+    
+    label {
+        text-transform: capitalize;
+        // font-weight: 500;
+    }
+
+    select {
+        display: block;
+        margin: 0.5rem 0 1.5rem;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        width: 30vw;
+        width:auto;
+        font-size: abstracts.$font-clamp-sm;
+        font-weight: 600;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        text-transform: capitalize;
+    }
+
+    input, textarea {
+        display: block;
+        padding: 0.75rem;
+        margin: 0.5rem 0 1.5rem;
+        margin: 0.5rem 0 1rem;
+        width: 100%;
+        border: none;
+        outline: 1px solid abstracts.$brand;
+        outline: 1px solid transparent;
+        background-color: hsl(0, 0%, 83%);
+        color: abstracts.$text-main;
+        border-radius: abstracts.$border-radius-xsm;
+        resize: none;
+        transition: 500ms;
+        // DESKTOP PADDING
+        @include abstracts.md {
+            // padding: 0.5rem;
+        }
+
+        &:valid {
+            outline-color: #000;
+            background-color: #fff;
+        }
+        
+
+        &::placeholder {
+            opacity: 0;
+            // color: #ddd;
+            transform: translateX(.5rem);
+            transition: 500ms;
+            text-transform: capitalize;
+        }
+        
+        // INPUT HOVER EFFECT
+        &:focus {
+            // border-bottom-color: abstracts.$brand-light;
+            outline-color: abstracts.$brand-light;
+
+        }
+
+        &:hover, &:focus {
+            &::placeholder {
+                opacity: 1;
+                transform: translateX(0rem);
+            }
+
+        }
+    }
+    
+
+    // SUBMIT BUTTON
+    button {
+        font-family: inherit;
+        font-weight: 500;
+        margin-top: 5vh;
+
+        &:active, &:focus, &:hover  {
+            .icon {
+                transform: rotate(20deg) translateX(.25rem);
+                transition: .25s;
+            }
+        }
+    }
+    
+}

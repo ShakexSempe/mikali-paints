@@ -10,7 +10,7 @@
 
     // DARK-THEME 
     @include abstracts.dark {
-        background: #333;
+        background: hsl(0, 0%, 15%);
         color: #f4f4f4;
         p {
             color: inherit;
@@ -30,12 +30,19 @@
             background: #333;
         }
     }
+
     a {
         text-decoration: none;
         color: abstracts.$text-main;
         transition: .25s;
+
         &:hover, &:focus {
             color: abstracts.$brand;
+    
+            @include abstracts.dark {
+                color: abstracts.$brand-light;
+            }
+
         }
 
         @include abstracts.dark {
@@ -50,6 +57,7 @@
             width: 10rem;
             width: clamp(10rem, 15vw, 12rem);
             height: 100%;
+            border-radius: 0.25rem;
         }
     }
 

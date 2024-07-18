@@ -18,6 +18,7 @@ $screen-xlg-min: 1024px;
 @mixin item-bg {
     position: relative;
     transition: 350ms ease;
+    background-color: hsl(0, 0%, 99%);
     // ITEM BG
     &::after, &::before {
         content: '';
@@ -36,7 +37,6 @@ $screen-xlg-min: 1024px;
     }
 
     &::after {
-        background-color: blue;
         background-color: #ffff;
         box-shadow: 0 0.5rem 1rem #0002;
         opacity: 0;
@@ -46,6 +46,18 @@ $screen-xlg-min: 1024px;
         transform: scale(1.0125);
         &::before {opacity: 0;}
         &::after {opacity: 1;}
+    }
+
+
+    // DARK THEME 
+    @include dark {
+        background-color: #333;
+        &::before {
+            background-color: #333;
+        }
+        &::after {
+            background-color: hsl(0, 0%, 25%);
+        }
     }
 }
 

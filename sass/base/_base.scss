@@ -27,7 +27,7 @@ main {
         left: 0;
         width: 100%;
         min-height: 100vh;
-        background-image: linear-gradient(40deg, abstracts.$brand-light, #000);
+        background-image: linear-gradient(40deg, hsl(348, 83%, 17%), #000);
         opacity: 0;
         z-index: -1;
         transition: .2s;
