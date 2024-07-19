@@ -5,11 +5,11 @@
     // border: 1px solid red;
     background-color: #f4f4f4;
     background-color: hsl(0, 0%, 90%);
-    padding: 10vh 5vw;
+    padding: 5vh 5vw;
     position: relative;
     isolation: isolate;
     // height: 95vh;
-    width: 100%;
+    max-width: 100%;
 
     @include abstracts.md {
         padding: 10vw 10vw;
@@ -28,7 +28,7 @@
 
 // SERVICE SECTION = INDIVIDUAL SERVICE
 .service-section {
-    // border: 2px solid blue;
+    padding-block: 10vh;
     position: relative;
 
     .service-title {
@@ -43,27 +43,7 @@
             }
         }
     
-        .service-title-img {
-            position: absolute;
-            right: 5vw;
-            top: 5vh;
-            rotate: -30deg;
-            filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 10%, 0.75));
-            animation: brush 5500ms infinite;
-            transform-style: preserve-3d;
-
-            @include abstracts.lg {
-                display: none;
-            }
-
-            @keyframes brush {
-                50% {
-                    rotate: 0deg;
-                    translate: 0 1rem;
-                    filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 15%, 0.25));
-                }
-            }
-        }
+        
 
         .service-cta-container {
             h4 {
@@ -172,3 +152,60 @@
 
 }
 
+.service-title-icon {
+    position: absolute;
+    right: 5vw;
+    top: 15vh;
+    rotate: -30deg;
+    filter: drop-shadow(-1rem 1rem 1.75rem hsla(348, 83%, 10%, 0.75));
+    transform-style: preserve-3d;
+    
+    &.brush {
+        animation: brush 5500ms infinite;
+    }
+    &.ruler {
+        animation: ruler 5500ms infinite;
+    }
+
+    @include abstracts.lg {
+        right: 40%;
+    }
+
+    
+}
+
+.service-item-imgs {
+    // max-width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    
+    
+    img {
+        object-fit: cover;
+        object-position: right center;
+        width: 100%;
+        height: 100%;
+        transition: 500ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    @include abstracts.sm {
+        overflow: hidden;
+        width: 450px;
+    }
+    @include abstracts.xlg {
+        width: 100vw;
+        height: 24rem;
+        max-width: 1024px;
+    }
+    
+
+
+}

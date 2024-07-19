@@ -2007,10 +2007,10 @@ aside.active .social-links a {
 .services {
   background-color: #f4f4f4;
   background-color: #e6e6e6;
-  padding: 10vh 5vw;
+  padding: 5vh 5vw;
   position: relative;
   isolation: isolate;
-  width: 100%;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   .services {
@@ -2028,6 +2028,7 @@ aside.active .social-links a {
 }
 
 .service-section {
+  padding-block: 10vh;
   position: relative;
 }
 .service-section .service-title {
@@ -2040,27 +2041,6 @@ aside.active .social-links a {
 }
 .service-section .service-title h3 span {
   color: #a30f2d;
-}
-.service-section .service-title .service-title-img {
-  position: absolute;
-  right: 5vw;
-  top: 5vh;
-  rotate: -30deg;
-  filter: drop-shadow(-1rem 1rem 1.75rem rgba(47, 4, 13, 0.75));
-  animation: brush 5500ms infinite;
-  transform-style: preserve-3d;
-}
-@media (min-width: 820px) {
-  .service-section .service-title .service-title-img {
-    display: none;
-  }
-}
-@keyframes brush {
-  50% {
-    rotate: 0deg;
-    translate: 0 1rem;
-    filter: drop-shadow(-0.5rem 0.5rem 0.125rem rgba(70, 7, 19, 0.25));
-  }
 }
 .service-section .service-title .service-cta-container h4 {
   text-transform: uppercase;
@@ -2175,10 +2155,77 @@ aside.active .social-links a {
   }
 }
 
+.service-title-icon {
+  position: absolute;
+  right: 5vw;
+  top: 15vh;
+  rotate: -30deg;
+  filter: drop-shadow(-1rem 1rem 1.75rem rgba(47, 4, 13, 0.75));
+  transform-style: preserve-3d;
+}
+.service-title-icon.brush {
+  animation: brush 5500ms infinite;
+}
+.service-title-icon.ruler {
+  animation: ruler 5500ms infinite;
+}
+@media (min-width: 820px) {
+  .service-title-icon {
+    right: 40%;
+  }
+}
+
+.service-item-imgs {
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.service-item-imgs img {
+  object-fit: cover;
+  object-position: right center;
+  width: 100%;
+  height: 100%;
+  transition: 500ms ease;
+}
+.service-item-imgs img:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 500px) {
+  .service-item-imgs {
+    overflow: hidden;
+    width: 450px;
+  }
+}
+@media (min-width: 1024px) {
+  .service-item-imgs {
+    width: 100vw;
+    height: 24rem;
+    max-width: 1024px;
+  }
+}
+
 @keyframes card-hover {
   50% {
     transform: scale(1.025);
     transition-timing-function: ease-in-out;
+  }
+}
+@keyframes brush {
+  50% {
+    rotate: 0deg;
+    translate: 0 1rem;
+    filter: drop-shadow(-0.5rem 0.5rem 0.125rem rgba(47, 4, 13, 0.25));
+  }
+}
+@keyframes ruler {
+  50% {
+    rotate: 0deg;
+    translate: 0 1rem;
+    transform: scale(0.95);
+    filter: drop-shadow(-0.5rem 0.5rem 0.125rem rgba(47, 4, 13, 0.25));
   }
 }
 

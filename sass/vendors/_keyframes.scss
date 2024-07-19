@@ -6,3 +6,22 @@
         transition-timing-function: ease-in-out;
     }
 }
+
+// SERVICE ITEM BRUSH ANIMATION
+@keyframes brush {
+    50% {
+        rotate: 0deg;
+        translate: 0 1rem;
+        filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 10%, 0.25));
+    }
+}
+
+// SERVICE ITEM RULE ANIMATION
+@keyframes ruler {
+    50% {
+        rotate: 0deg;
+        translate: 0 1rem;
+        transform: scale(0.95);
+        filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 10%, 0.25));
+    }
+}
