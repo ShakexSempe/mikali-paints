@@ -2030,9 +2030,7 @@ aside.active .social-links a {
 .service-section {
   padding-block: 10vh;
   position: relative;
-}
-.service-section .service-title {
-  max-width: 400px;
+  max-width: 100%;
 }
 .service-section .service-title h3 {
   font-size: clamp(1.6rem, 5vw, 2.25rem);
@@ -2046,6 +2044,12 @@ aside.active .social-links a {
   text-transform: uppercase;
   font-size: clamp(1rem, 2vw, 1.125rem);
   margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .service-section .service-title {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .service-section .service-items {
   margin-block: 10vh;
@@ -2172,38 +2176,46 @@ aside.active .social-links a {
 @media (min-width: 820px) {
   .service-title-icon {
     right: 40%;
+    display: none;
   }
 }
 
 .service-item-imgs {
   overflow-x: scroll;
+  overflow-y: hidden;
   display: flex;
   justify-content: space-between;
   height: 20rem;
   width: 100%;
+  margin-block: 2.5vh 5vh;
   border-radius: 0.25rem;
 }
 .service-item-imgs img {
   object-fit: cover;
   object-position: right center;
   width: 100%;
+  width: 100%;
   height: 100%;
   transition: 500ms ease;
 }
 .service-item-imgs img:hover {
-  transform: scale(1.1);
+  transform: scale(1.025);
 }
 @media (min-width: 500px) {
   .service-item-imgs {
-    overflow: hidden;
-    width: 450px;
+    object-fit: contain;
+    height: 50vh;
   }
 }
 @media (min-width: 1024px) {
   .service-item-imgs {
-    width: 100vw;
+    overflow: hidden;
     height: 24rem;
-    max-width: 1024px;
+    max-width: 800px;
+    max-width: 100%;
+  }
+  .service-item-imgs img {
+    width: 33.333%;
   }
 }
 
