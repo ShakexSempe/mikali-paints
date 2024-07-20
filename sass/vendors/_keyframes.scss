@@ -9,6 +9,10 @@
 
 // SERVICE ITEM BRUSH ANIMATION
 @keyframes brush {
+    0%, 100% {
+        rotate: -30deg;
+    }
+
     50% {
         rotate: 0deg;
         translate: 0 1rem;
@@ -18,10 +22,36 @@
 
 // SERVICE ITEM RULE ANIMATION
 @keyframes ruler {
-    50% {
-        rotate: 0deg;
+    // 50% {
+    //     rotate: 0deg;
+    //     translate: 0 1rem;
+    //     transform: scale(0.95);
+    //     filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 10%, 0.25));
+    // }
+    0%, 100% {
         translate: 0 1rem;
-        transform: scale(0.95);
-        filter: drop-shadow(-0.5rem 0.5rem 0.125rem hsla(348, 83%, 10%, 0.25));
+        rotate: 0deg;
+        filter: drop-shadow(-0.5rem 0.5rem 1rem blue);
+        filter: drop-shadow(-0.5rem 0.5rem 1rem hsla(348, 83%, 10%, 0.5));
     }
+    
+    25% {
+        translate: -1rem 0rem;
+        rotate: -90deg;
+        filter: drop-shadow(-0.25rem 0.25rem 0.125rem red);
+        filter: drop-shadow(-0.25rem 0.25rem 0.125rem hsla(348, 83%, 10%, 0.5));
+    }
+
+    50% {
+        translate: -1rem 1rem;
+        rotate: -90deg;
+        filter: drop-shadow(-0.125rem 0.125rem 0.125rem hsla(348, 83%, 10%, 0.6));
+    }
+
+    75% {
+        translate: -1rem 0.5rem;
+        rotate: 0deg;
+        filter: drop-shadow(-0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.24));
+    }
+
 }
