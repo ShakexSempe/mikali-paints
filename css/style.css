@@ -2110,11 +2110,11 @@ aside.active .social-links a {
   }
 }
 .service-section .service-items .service-item h4 {
+  font-size: 1rem;
+  font-size: clamp(.95rem, 1.25vw, 1.025rem);
   text-transform: uppercase;
   font-weight: 500;
   transition: 150ms ease;
-  font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .service-section .service-items .service-item .content-container ul {
   list-style: none;

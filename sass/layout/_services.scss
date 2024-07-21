@@ -76,21 +76,16 @@
             position: relative;
             border-radius: 0.5rem;
             padding: 0.5rem;
+
             // PSEUDO BG
             @include abstracts.item-bg;
 
             h4 {
+                font-size: 1rem;
+                font-size: abstracts.$font-clamp-xsm;
                 text-transform: uppercase;
                 font-weight: 500;
                 transition: 150ms ease;
-                font-size: 1rem;
-                font-size: abstracts.$font-clamp-sm;
-                // color: abstracts.$brand;
-                
-                @include abstracts.dark {
-                    // color: abstracts.$brand-light;
-                }
-
             }
 
             .content-container {
