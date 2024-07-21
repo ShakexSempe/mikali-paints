@@ -22,6 +22,7 @@
     // DESKTOP HERO
     @include abstracts.lg {
         background: abstracts.$bg-main;
+        background: hsl(0, 0%, 95%);
         grid-template-rows: 1fr;
         grid-template-columns: 50% 50%;
         grid-template-areas: 'title image';
@@ -69,8 +70,8 @@
             // border-top-right-radius: 1rem;
             // border-bottom-right-radius: 1rem;
             // max-width: 800px;
-            // -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%) ;
-            // mask: linear-gradient(90deg, transparent, #fff 30%);
+            -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%) ;
+            mask: linear-gradient(90deg, transparent, #fff 30%);
         }
     }
 }
@@ -86,7 +87,7 @@
         position: absolute;
         inset: 0;
         top: 5vh;
-        left: 5vw;
+        left: 0;
         width: 85%;
         height: 50%;
         background: hsl(0, 0%, 93%);

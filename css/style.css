@@ -1505,6 +1505,7 @@ aside.active .social-links a {
 @media (min-width: 820px) {
   #hero {
     background: #fafafa;
+    background: #f2f2f2;
     grid-template-rows: 1fr;
     grid-template-columns: 50% 50%;
     grid-template-areas: "title image";
@@ -1536,6 +1537,8 @@ aside.active .social-links a {
     width: 100%;
     object-position: center;
     border-radius: 0.5rem;
+    -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%);
+    mask: linear-gradient(90deg, transparent, #fff 30%);
   }
 }
 
@@ -1549,7 +1552,7 @@ aside.active .social-links a {
   position: absolute;
   inset: 0;
   top: 5vh;
-  left: 5vw;
+  left: 0;
   width: 85%;
   height: 50%;
   background: #ededed;
