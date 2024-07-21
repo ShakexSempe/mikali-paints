@@ -945,6 +945,10 @@ img {
 .footer .footer-copyright a {
   font-weight: 500;
 }
+.footer .footer-copyright #date {
+  color: inherit;
+  font-weight: 600;
+}
 .footer .footer-item .footer-item-title {
   text-transform: capitalize;
   margin-bottom: 0.5rem;

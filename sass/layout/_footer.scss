@@ -69,11 +69,19 @@
             @include abstracts.lg {
                 margin-bottom: .25rem;
             }
+
+            
         }
         a {
             // color: abstracts.$brand;
             font-weight: 500;
         }
+
+        #date {
+            color: inherit;
+            font-weight: 600;
+        }
+
     }
 
     .footer-item {
