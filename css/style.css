@@ -1879,10 +1879,10 @@ aside.active .social-links a {
 }
 @media (min-width: 768px) {
   #projects .projects-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 60vh);
-    row-gap: 4rem;
-    column-gap: 1rem;
+    height: 80vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
   }
 }
 #projects .projects-container figure {
