@@ -795,12 +795,12 @@ img {
 }
 .about-article.io-item h3 {
   letter-spacing: 0.025rem;
-  transition: 500ms;
+  transition: 500ms linear;
 }
 .about-article.io-item p {
-  opacity: 0.45;
+  opacity: 0.25;
   transform: translateY(0.5rem);
-  transition: 1000ms 250ms;
+  transition: 1000ms 450ms linear;
 }
 .about-article.active-item h3 {
   letter-spacing: normal;
