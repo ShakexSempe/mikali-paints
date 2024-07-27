@@ -11,6 +11,10 @@ const aside = document.querySelector("aside");
 const dropdownBtn = document.querySelectorAll(".aside-dropdown")
 const links = document.querySelectorAll('#aside ul li a');
 
+// PAGE DATES
+const date = document.getElementById("date");
+        date.innerHTML = new Date().getFullYear();
+
 // ACTIVE PAGE LINKS
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('.nav-link');
