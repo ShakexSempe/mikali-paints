@@ -162,7 +162,7 @@ h3 {
 p {
   color: #333;
   font-family: "Content", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
   line-height: 1.8;
   text-wrap: pretty;
 }
@@ -536,7 +536,7 @@ img {
   border-radius: 0.25rem;
   width: 30vw;
   width: auto;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
   font-weight: 500;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   text-transform: capitalize;
@@ -1582,7 +1582,7 @@ aside.active .social-links a {
   text-transform: capitalize;
 }
 .hero-title .slogan p {
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
 }
 .hero-title .slogan :first-child {
   margin-bottom: 0.25rem;
@@ -1702,7 +1702,7 @@ aside.active .social-links a {
 
 .menu-title {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
   margin-bottom: 1.5rem;
   color: #a30f2d;
   font-weight: 500;
@@ -1994,7 +1994,7 @@ aside.active .social-links a {
 }
 #references .references .reference .card-item {
   text-transform: capitalize;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -2054,7 +2054,7 @@ aside.active .social-links a {
 }
 .service-section .service-title .service-cta-container h4 {
   text-transform: uppercase;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
   margin-bottom: 1rem;
 }
 @media (min-width: 1024px) {
