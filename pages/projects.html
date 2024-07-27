@@ -187,35 +187,87 @@
         <main class="main index-main" id="main" >
 
             <!-- PROJECTS -->
-        <section class="projects" id="projects">
-                        
-            <div class="projects-container">
+            <section class="projects" id="projects">
+                            
+                <div class="projects-container">
 
-                <figure>
-                    <img src="../img/rust-paint-before.jpg" width="475" loading="lazy" height="450" alt="painting services">
-                </figure>
-                <figure>
-                    <img src="../img/rust-paint-after.jpg" width="475" loading="lazy" height="462" alt="painting services">
-                </figure>
+                    <figure>
+                        <img src="../img/rust-paint-before.jpg" width="475" loading="lazy" height="450" alt="painting services">
+                    </figure>
+                    <figure>
+                        <img src="../img/rust-paint-after.jpg" width="475" loading="lazy" height="462" alt="painting services">
+                    </figure>
+                    
+                    <figure>
+                        <img src="../img/desk-before.jpg" width="464" loading="lazy" height="825" alt="carpentry services">
+                    </figure>
+                    <figure>
+                        <img src="../img/desk-after.jpg" width="475" loading="lazy" height="633" alt="carpentry services">
+                    </figure>
+
+                    <figure>
+                        <img src="../img/window-install-before.jpg" loading="lazy" width="475" height="450" alt="window installation">
+                    </figure>
+                    <figure>
+                        <img src="../img/window-install-after.jpg" loading="lazy" width="475" height="450" alt="window installation">
+                    </figure>
+
+
+                </div>
+
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section class="contact" id="contact">
+                    
+                <div class="section-title">
+                    <h3>make enquiry</h3>
+                </div>
+
+                <!-- FORM -->
+                <form id="form" class="contact-form" target="_blank" action="https://formsubmit.co/mikalipaints@gmail.com"
+                    method="POST">
+
+                    <!-- NAME -->
+                    <label for="name">name :</label>
+                    <input type="text" tabindex="0" name="Name" id="username" placeholder="Enter your full name.." minlength="2"
+                        required>
+                    <!-- EMAIL -->
+                    <label for="email">email :</label>
+                    <input type="email" name="Email" id="email" placeholder="Enter your email address.." 
+                        required>
+
+                    <!-- DROPDOWN  -->
+                    <label for="services">select service :</label>
+                    <select name="services" id="services">
+                        <option value="painting">painting</option>
+                        <option value="carpentry">carpentry</option>
+                        <option value="ceiling">ceiling</option>
+                        <option value="other">other</option>
+                    </select>
+
+                    <!-- TEXTAREA -->
+                    <label for="message">subject of enquiry :</label>
+                    <textarea name="Subject" rows="4" cols="10" minlength="2" placeholder="eg. Bathroom Set Installation"
+                        id="message" required></textarea>
+
+                    <button type="submit" class="cta-btn btn-lg" title="submit form" >submit enquiry
+                        <img class="icon" src="../icons/contact/icons8-sent-100.png" alt="sent envelope" height="100" width="100" >
+                    </button>
+
+                    <!-- form options -->
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse"
+                        value="We have has received your enquiry. We will be in touch shortly.Thank you.">
+                    <!-- <input type="hidden" name="_next" value="https://mikalipaints/pages/thanks.html"> -->
+                    <input type="hidden" name="_template" value="box">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_cc" value="bshakex@gmail.com">
+
+
+                </form>
                 
-                <figure>
-                    <img src="../img/desk-before.jpg" width="464" loading="lazy" height="825" alt="carpentry services">
-                </figure>
-                <figure>
-                    <img src="../img/desk-after.jpg" width="475" loading="lazy" height="633" alt="carpentry services">
-                </figure>
-
-                <figure>
-                    <img src="../img/window-install-before.jpg" loading="lazy" width="475" height="450" alt="window installation">
-                </figure>
-                <figure>
-                    <img src="../img/window-install-after.jpg" loading="lazy" width="475" height="450" alt="window installation">
-                </figure>
-
-
-            </div>
-
-        </section>
+            </section>
 
             <!-- FOOTER -->
             <div class="footer" id="footer">

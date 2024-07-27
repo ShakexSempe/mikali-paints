@@ -1863,6 +1863,7 @@ aside.active .social-links a {
 
 #projects {
   background: linear-gradient(90deg, #333333, #666666);
+  background: linear-gradient(90deg, #cccccc, #d9d9d9);
   padding: 5vh 5vw;
 }
 @media (min-width: 768px) {
@@ -1883,6 +1884,7 @@ aside.active .social-links a {
   grid-template-rows: 10rem 15rem 10rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0.125rem 0.5rem 0.75rem rgba(51, 0, 0, 0.125);
 }
 @media (min-width: 768px) {
   #projects .projects-container {
@@ -1890,6 +1892,7 @@ aside.active .social-links a {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5rem;
+    box-shadow: none;
   }
 }
 #projects .projects-container figure {
@@ -1911,6 +1914,7 @@ aside.active .social-links a {
   transform: scale(1.075);
 }
 #projects .projects-container:hover figure img {
+  filter: grayscale(0.75);
   filter: grayscale(1);
 }
 #projects .projects-container:hover figure:has(img:hover) img {
