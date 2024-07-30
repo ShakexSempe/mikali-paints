@@ -887,36 +887,35 @@ img {
     padding: 10vh 10vw;
   }
 }
-
-article {
+.cta-section article {
   margin-bottom: 5vh;
 }
-article h3 {
+.cta-section article h3 {
   color: #a30f2d;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
 }
-article p {
+.cta-section article p {
   padding: 1rem 0;
 }
-article a {
+.cta-section article a {
   color: #a30f2d;
   text-transform: capitalize;
   font-size: inherit;
 }
-article a:hover {
+.cta-section article a:hover {
   text-decoration-color: #a30f2d;
 }
-article ul {
+.cta-section article ul {
   padding: 1rem;
 }
-article ul li {
+.cta-section article ul li {
   margin-bottom: 0.5rem;
   font-weight: inherit;
 }
-article ul li::first-letter {
+.cta-section article ul li::first-letter {
   text-transform: capitalize;
 }
-article ul li::after {
+.cta-section article ul li::after {
   content: ".";
 }
 
