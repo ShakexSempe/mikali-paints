@@ -66,7 +66,7 @@ main::after {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(40deg, #4f0716, #000);
+  background-image: linear-gradient(40deg, #1a1100, #000);
   opacity: 0;
   z-index: -1;
   transition: 0.2s;
@@ -177,7 +177,7 @@ a:hover:not(.cta-btn, .skip-link, .logo), a:focus:not(.cta-btn, .skip-link, .log
 }
 
 span {
-  color: #d2143a;
+  color: #a30f2d;
 }
 
 .icon {
@@ -185,7 +185,7 @@ span {
   width: clamp(1rem, 3vw, 1.0125rem);
   height: 1rem;
   height: clamp(1rem, 3vh, 1.0125rem);
-  transition: 0.25s;
+  transition: 250ms;
 }
 
 * {
@@ -1700,6 +1700,26 @@ aside.active .social-links a {
   font-size: clamp(.95rem, 1.25vw, 1.025rem);
   margin-bottom: 1rem;
 }
+.menu-item-slogan a {
+  color: #a30f2d;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-underline-offset: 2px;
+  width: max-content;
+}
+.menu-item-slogan a .icon {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+.menu-item-slogan a:hover {
+  color: inherit;
+  text-decoration-color: #a30f2d;
+}
+.menu-item-slogan a:hover .icon {
+  transform: translateX(-0.15rem);
+}
 
 .menu-title {
   font-size: 1rem;
@@ -2027,7 +2047,7 @@ aside.active .social-links a {
 }
 @media (min-width: 768px) {
   .services {
-    padding: 10vw 10vw;
+    padding: 5vw 10vw;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -2041,12 +2061,12 @@ aside.active .social-links a {
 }
 
 .service-section {
-  padding-block: 10vh;
   position: relative;
   max-width: 100%;
+  margin-bottom: 20vh;
 }
 .service-section .service-title h3 {
-  font-size: clamp(1.6rem, 5vw, 2.25rem);
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 5vh;
   line-height: 1.2;
 }
@@ -2072,6 +2092,7 @@ aside.active .social-links a {
 @media (min-width: 768px) {
   .service-section .service-items {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     margin-block: 5vh;
   }
 }
@@ -2131,7 +2152,6 @@ aside.active .social-links a {
 }
 .service-section .service-items .service-item .content-container ul {
   list-style: none;
-  padding: 1rem 0.25rem 0.5rem;
 }
 .service-section .service-items .service-item .content-container ul li {
   padding: 0.25rem;

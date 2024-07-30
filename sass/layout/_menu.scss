@@ -78,6 +78,31 @@
     font-size: 0.975rem;
     font-size: abstracts.$font-clamp-xsm;
     margin-bottom: 1rem;
+
+    a {
+        color: abstracts.$brand;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        text-underline-offset: 2px;
+        width: max-content;
+        
+        .icon {
+            width: 0.85rem;
+            height: 0.85rem;
+        }
+
+        &:hover {
+            color: inherit;
+            text-decoration-color: abstracts.$brand;
+
+            .icon {
+                transform: translateX(-0.15rem);
+            }
+        }
+
+    }
 }
 
 .menu-title {

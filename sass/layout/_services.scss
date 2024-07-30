@@ -12,7 +12,7 @@
     max-width: 100%;
 
     @include abstracts.md {
-        padding: 10vw 10vw;
+        padding: 5vw 10vw;
     }
 
     @include abstracts.dark {
@@ -29,14 +29,15 @@
 // SERVICE SECTION = INDIVIDUAL SERVICE
 .service-section {
     // border: 2px solid blue;
-    padding-block: 10vh;
+    // padding-block: 10vh;
     position: relative;
     max-width: 100%;
+    margin-bottom: 20vh;
 
     .service-title {
         // max-width: 400px;
         h3 {
-            font-size: abstracts.$font-clamp-xlg;
+            font-size: abstracts.$font-clamp-lg;
             margin-bottom: 5vh;
             line-height: 1.2;
             
@@ -69,6 +70,7 @@
         
         @include abstracts.md {
             grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: auto auto;
             margin-block: 5vh;
         }
 
@@ -91,7 +93,7 @@
             .content-container {
                 ul {
                     list-style: none;
-                    padding: 1rem 0.25rem 0.5rem;
+                    // padding: 1rem 0.25rem 0.5rem;
                     // padding: 0.5rem;
                     // border: 1px solid red;
                     li {
@@ -132,8 +134,6 @@
                 }
             }
 
-
-            
 
             &:hover {
 
