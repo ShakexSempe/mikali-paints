@@ -2066,7 +2066,7 @@ aside.active .social-links a {
   margin-bottom: 20vh;
 }
 .service-section .service-title h3 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   margin-bottom: 5vh;
   line-height: 1.2;
 }
