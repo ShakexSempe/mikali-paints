@@ -877,6 +877,49 @@ img {
   }
 }
 
+.cta-section {
+  background-color: #fafafa;
+  padding: 5vh 5vw;
+  min-height: 80vh;
+}
+@media (min-width: 768px) {
+  .cta-section {
+    padding: 10vh 10vw;
+  }
+}
+
+article {
+  margin-bottom: 5vh;
+}
+article h3 {
+  color: #a30f2d;
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
+}
+article p {
+  padding: 1rem 0;
+}
+article a {
+  color: #a30f2d;
+  text-transform: capitalize;
+  font-size: inherit;
+}
+article a:hover {
+  text-decoration-color: #a30f2d;
+}
+article ul {
+  padding: 1rem;
+}
+article ul li {
+  margin-bottom: 0.5rem;
+  font-weight: inherit;
+}
+article ul li::first-letter {
+  text-transform: capitalize;
+}
+article ul li::after {
+  content: ".";
+}
+
 .footer {
   padding: 5vh 5vw 11vh;
   background: linear-gradient(0deg, #fafafa, #ffff);
@@ -2039,8 +2082,8 @@ aside.active .social-links a {
 
 .services {
   background-color: #f4f4f4;
-  background-color: #e6e6e6;
-  padding: 5vh 5vw;
+  background-color: #f2f2f2;
+  padding: 10vh 5vw;
   position: relative;
   isolation: isolate;
   max-width: 100%;
@@ -2061,9 +2104,15 @@ aside.active .social-links a {
 }
 
 .service-section {
+  margin-bottom: 5vh;
   position: relative;
   max-width: 100%;
-  margin-bottom: 20vh;
+  scroll-margin-top: 5vh;
+}
+@media (min-width: 768px) {
+  .service-section {
+    margin-bottom: 20vh;
+  }
 }
 .service-section .service-title h3 {
   font-size: clamp(1.5rem, 4vw, 2rem);
@@ -2085,7 +2134,7 @@ aside.active .social-links a {
   }
 }
 .service-section .service-items {
-  margin-block: 5vh;
+  margin-block: 10vh;
   display: grid;
   gap: 5vh;
 }
@@ -2196,14 +2245,8 @@ aside.active .social-links a {
   position: absolute;
   right: 5vw;
   top: 15vh;
-  filter: drop-shadow(-1rem 1rem 1.75rem rgba(47, 4, 13, 0.75));
+  filter: drop-shadow(0.5rem 0.5rem 0.25rem rgba(47, 4, 13, 0.15));
   transform-style: preserve-3d;
-}
-.service-title-icon.brush {
-  animation: brush 5500ms infinite;
-}
-.service-title-icon.ruler {
-  animation: ruler 5500ms infinite;
 }
 @media (min-width: 820px) {
   .service-title-icon {

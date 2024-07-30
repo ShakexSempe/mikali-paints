@@ -1,0 +1,54 @@
+@use '../abstracts';
+
+.cta-section {
+    // border: 2px solid red;
+    background-color: #fafafa;
+    padding: 5vh 5vw;
+    min-height: 80vh;
+    
+    @include abstracts.md {
+        padding: 10vh 10vw;
+    }
+    
+}
+
+article {
+    // border: 1px solid blue;
+    margin-bottom: 5vh;
+    
+    h3 {
+        color: abstracts.$brand;
+        font-size: abstracts.$font-clamp-md;
+    }
+
+    p {
+        padding: 1rem 0;
+    }
+
+    a {
+        color: abstracts.$brand;
+        text-transform: capitalize;
+        font-size: inherit;
+        &:hover {
+            text-decoration-color: abstracts.$brand;
+        }
+    }
+
+    ul {
+        padding: 1rem;
+        
+        li {
+            margin-bottom: 0.5rem;
+            font-weight: inherit;
+            &::first-letter {
+                text-transform: capitalize;
+            }
+            &::after {
+                content: '.';
+            }
+        }
+
+    }
+
+
+}
