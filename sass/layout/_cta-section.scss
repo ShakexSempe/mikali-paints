@@ -37,7 +37,7 @@
             
             li {
                 margin-bottom: 0.5rem;
-                font-weight: inherit;
+                font-family: abstracts.$font-content;
                 &::first-letter {
                     text-transform: capitalize;
                 }

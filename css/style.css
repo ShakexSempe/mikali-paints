@@ -910,7 +910,7 @@ img {
 }
 .cta-section article ul li {
   margin-bottom: 0.5rem;
-  font-weight: inherit;
+  font-family: "Content", sans-serif;
 }
 .cta-section article ul li::first-letter {
   text-transform: capitalize;
@@ -1987,17 +1987,13 @@ aside.active .social-links a {
   display: grid;
   gap: 10vh;
 }
+.project-items .project-item {
+  overflow: hidden;
+}
 .project-items .project-item h4 {
   padding-bottom: 0.5rem;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
-}
-.project-items .project-item img {
-  max-height: 50vh;
-  object-fit: cover;
-  border: 1px solid #000;
-  border-radius: 0.25rem;
-  transition: 250ms ease;
 }
 .project-items .project-item:hover h4 {
   color: #a30f2d;
@@ -2007,10 +2003,21 @@ aside.active .social-links a {
   flex-direction: column;
   gap: 5vh;
 }
-@media (min-width: 768px) {
+.project-items .flex-container img {
+  max-width: 350px;
+  max-height: 55vh;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  transition: 250ms ease;
+}
+@media (min-width: 820px) {
   .project-items .flex-container {
     flex-direction: row;
-    gap: 10vw;
+    gap: 2rem;
   }
 }
 
