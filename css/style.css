@@ -2085,7 +2085,7 @@ aside.active .social-links a {
   }
 }
 .service-section .service-items {
-  margin-block: 10vh;
+  margin-block: 5vh;
   display: grid;
   gap: 5vh;
 }
