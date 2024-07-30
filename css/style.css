@@ -2140,7 +2140,7 @@ aside.active .social-links a {
 }
 
 .service-section {
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
   position: relative;
   max-width: 100%;
   scroll-margin-top: 5vh;
@@ -2161,7 +2161,7 @@ aside.active .social-links a {
 .service-section .service-title .service-cta-container h4 {
   text-transform: uppercase;
   font-size: clamp(1rem, 1.5vw, 1.025rem);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 1024px) {
   .service-section .service-title {
@@ -2170,7 +2170,7 @@ aside.active .social-links a {
   }
 }
 .service-section .service-items {
-  margin-block: 10vh;
+  margin-block: 5vh;
   display: grid;
   gap: 5vh;
 }

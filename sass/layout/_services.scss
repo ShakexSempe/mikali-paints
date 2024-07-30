@@ -30,7 +30,7 @@
 .service-section {
     // border: 2px solid blue;
     // padding-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     position: relative;
     max-width: 100%;
     scroll-margin-top: 5vh;
@@ -56,7 +56,7 @@
             h4 {
                 text-transform: uppercase;
                 font-size: abstracts.$font-clamp-sm;
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
             }
 
         }
@@ -70,7 +70,7 @@
 
 
     .service-items {
-        margin-block: 10vh;
+        margin-block: 5vh;
         display: grid;
         gap: 5vh;
         
