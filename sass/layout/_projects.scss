@@ -5,9 +5,10 @@
 
     // background-color: hsl(0, 0%, 40%);
     // background-color: yellow;
-    background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 40%));
-    background: linear-gradient(90deg, hsl(0, 0%, 80%), hsl(0, 0%, 85%));
-    padding: 5vh 5vw;
+    // background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 40%));
+    // background: linear-gradient(90deg, hsl(0, 0%, 80%), hsl(0, 0%, 85%));
+    padding: 10vh 5vw;
+    background-color: hsl(0, 0%, 90%);
 
     @include abstracts.md {
         padding: 5vh 10vw;
@@ -94,5 +95,47 @@
         // }
     }
     
+}
 
+.project-items {
+    // border: 2px solid red;
+    display: grid;
+    gap: 10vh;
+
+    
+    .project-item {
+        h4 {
+            padding-bottom: 0.5rem;
+            font-size: abstracts.$font-clamp-md;
+            font-weight: 500;
+        }
+
+        img {
+            max-height: 50vh;
+            object-fit: cover;
+            border: 1px solid #000;
+            border-radius: 0.25rem;
+            transition: 250ms ease;
+
+        }
+
+        &:hover {
+            h4 {
+                color: abstracts.$brand;
+            }
+            
+    }
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+    @include abstracts.md {
+        flex-direction: row;
+        gap: 10vw;
+    }
+}
 }

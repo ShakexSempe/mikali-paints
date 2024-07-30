@@ -1926,9 +1926,8 @@ aside.active .social-links a {
 }
 
 #projects {
-  background: linear-gradient(90deg, #333333, #666666);
-  background: linear-gradient(90deg, #cccccc, #d9d9d9);
-  padding: 5vh 5vw;
+  padding: 10vh 5vw;
+  background-color: #e6e6e6;
 }
 @media (min-width: 768px) {
   #projects {
@@ -1983,6 +1982,37 @@ aside.active .social-links a {
 }
 #projects .projects-container:hover figure:has(img:hover) img {
   filter: grayscale(0);
+}
+
+.project-items {
+  display: grid;
+  gap: 10vh;
+}
+.project-items .project-item h4 {
+  padding-bottom: 0.5rem;
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
+  font-weight: 500;
+}
+.project-items .project-item img {
+  max-height: 50vh;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  transition: 250ms ease;
+}
+.project-items .project-item:hover h4 {
+  color: #a30f2d;
+}
+.project-items .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+@media (min-width: 768px) {
+  .project-items .flex-container {
+    flex-direction: row;
+    gap: 10vw;
+  }
 }
 
 #references {
