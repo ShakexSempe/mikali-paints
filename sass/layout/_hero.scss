@@ -71,8 +71,8 @@
             // border-top-right-radius: 1rem;
             // border-bottom-right-radius: 1rem;
             // max-width: 800px;
-            -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%) ;
-            mask: linear-gradient(90deg, transparent, #fff 30%);
+            // -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%) ;
+            // mask: linear-gradient(90deg, transparent, #fff 30%);
         }
     }
 }
@@ -105,7 +105,10 @@
     @include abstracts.lg {
         padding: 0.5rem;
         &::after {
-            display: none;
+            top: 0;
+            height: 100%;
+            background: hsl(0, 0%, 100%);
+
         }
     }
 
@@ -122,7 +125,7 @@
         text-transform: capitalize;
         p {
                 font-size: abstracts.$font-clamp-sm;
-        
+                max-width: 450px;
                 // DARK THEME
                 @include abstracts.dark {
                     color: abstracts.$text-second-light;

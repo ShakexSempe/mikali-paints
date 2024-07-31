@@ -1661,8 +1661,6 @@ aside.active .social-links a {
     width: 100%;
     object-position: center;
     border-radius: 0.5rem;
-    -webkit-mask: linear-gradient(90deg, transparent, #ffffff 30%);
-    mask: linear-gradient(90deg, transparent, #fff 30%);
   }
 }
 
@@ -1694,7 +1692,9 @@ aside.active .social-links a {
     padding: 0.5rem;
   }
   .hero-title::after {
-    display: none;
+    top: 0;
+    height: 100%;
+    background: white;
   }
 }
 .hero-title h1 {
@@ -1708,6 +1708,7 @@ aside.active .social-links a {
 }
 .hero-title .slogan p {
   font-size: clamp(1rem, 1.5vw, 1.025rem);
+  max-width: 450px;
 }
 @media (prefers-color-scheme: dark) {
   .hero-title .slogan p {
