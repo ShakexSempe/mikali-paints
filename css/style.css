@@ -1023,10 +1023,14 @@ img {
     color: #ddd;
   }
 }
+.footer .footer-logo {
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  width: clamp(15rem, 20vw, 12rem);
+}
 .footer .footer-logo img {
-  width: 10rem;
-  width: clamp(10rem, 15vw, 12rem);
   height: 100%;
+  width: 100%;
   border-radius: 0.25rem;
 }
 .footer .footer-copyright {
@@ -1595,13 +1599,9 @@ aside.active .social-links a {
 }
 
 #hero {
-  border: 1px solid #0006;
   height: 95vh;
   position: relative;
   isolation: isolate;
-  transition: 250ms;
-  background: #e6e6e6;
-  background: linear-gradient(0deg, #e0e0e0, #e6e6e6);
   background: linear-gradient(0deg, #d9d9d9, #e6e6e6);
   display: grid;
   grid-template-rows: 55% 1fr;

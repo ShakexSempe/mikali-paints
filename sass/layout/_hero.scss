@@ -2,16 +2,10 @@
 
 // HERO 
 #hero {
-    border: 1px solid #0006;
     height: 95vh;
     position: relative;
     isolation: isolate;
-    transition: 250ms;
-    
-    background: hsl(0, 0%, 90%);
-    background: linear-gradient(0deg, #e0e0e0, hsl(0, 0%, 90%));
     background: linear-gradient(0deg, hsl(0, 0%, 85%), hsl(0, 0%, 90%));
-    // padding: 5vh 5vw;
 
     @include abstracts.dark {
         background: #333;

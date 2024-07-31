@@ -52,13 +52,16 @@
     
 
     .footer-logo {
-        // border: 1px solid blue;
+        border: 1px solid #000;
+        border-radius: 0.25rem;
+        width: clamp(15rem, 20vw, 12rem);
+        
         img {
-            width: 10rem;
-            width: clamp(10rem, 15vw, 12rem);
             height: 100%;
+            width: 100%;
             border-radius: 0.25rem;
         }
+        
     }
 
     .footer-copyright {
