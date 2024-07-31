@@ -6,6 +6,7 @@
     background-color: #eee;
     min-height: 90vh;
     padding: 10vh 5vw;
+    max-width: 100%;
 
     display: grid;
     gap: 10vh;
@@ -32,6 +33,7 @@
 // GRID ITEM
 .menu-item {
     // border: 1px solid #0005;
+    width: 100%;
     background-color: #fff;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -44,6 +46,9 @@
 
     &:hover {
 
+        .menu-item-link {
+            color: abstracts.$brand;
+        }
         .menu-title {
             color: abstracts.$brand-light;
         }
@@ -77,38 +82,41 @@
 .menu-item-slogan {
     font-size: 0.975rem;
     font-size: abstracts.$font-clamp-xsm;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
+    // max-width: 100%;
 
-    a {
-        color: abstracts.$brand;
-        text-transform: capitalize;
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
-        text-underline-offset: 2px;
-        width: max-content;
-        
-        .icon {
-            width: 0.85rem;
-            height: 0.85rem;
-        }
-
-        &:hover {
-            color: inherit;
-            text-decoration-color: abstracts.$brand;
-
-            .icon {
-                transform: translateX(-0.15rem);
-            }
-        }
-
-    }
 }
+
+.menu-item-link {
+    display: flex;
+    align-items: center;
+    // color: abstracts.$brand;
+    text-transform: capitalize;
+    gap: 0.25rem;
+    text-underline-offset: 2px;
+    // width: max-content;
+    
+    .icon {
+        width: 0.85rem;
+        height: 0.85rem;
+    }
+
+    &:hover {
+        color: inherit;
+        text-decoration-color: abstracts.$brand;
+
+        .icon {
+            transform: translateX(-0.15rem);
+        }
+    }
+
+}
+
 
 .menu-title {
     font-size: 1rem;
     font-size: abstracts.$font-clamp-sm;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: abstracts.$brand;
     font-weight: 500;
     transition: 150ms ease;
@@ -130,6 +138,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    // display: none;
 
     a {
         text-decoration-color: hsl(0, 0%, 95%);
