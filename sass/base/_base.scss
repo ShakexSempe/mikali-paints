@@ -199,6 +199,9 @@ a {
 
 span {
     color: abstracts.$brand;
+    @include abstracts.dark {
+        color: abstracts.$brand-light;
+    }
 }
 
 .icon {

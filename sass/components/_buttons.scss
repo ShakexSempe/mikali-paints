@@ -52,10 +52,11 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     padding: 0.65rem;
     margin: 0.5rem 0;
 
-    background: abstracts.$brand-light;
+    background: abstracts.$button;
     color: hsl(0, 0%, 85%);
     color: abstracts.$text-main;
     color: abstracts.$text-second;
+    color: abstracts.$brand-light;
     border: none;
     border-radius: abstracts.$border-radius-sm;
 
