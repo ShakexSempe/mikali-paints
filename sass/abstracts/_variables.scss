@@ -4,8 +4,8 @@ $btn-md : clamp(11rem, 15vw, 11rem);
 $btn-lg : clamp(12rem, 15vw, 13rem);
 
 $brand: #dc143c;
-$brand: orange;
 $brand: hsl(348, 83%, 35%);
+$brand: #75500b;
 $brand-red: #dc143c;
 $brand-dark: hsl(39, 100%, 40%);
 $brand-dark: #d2143a;
@@ -16,7 +16,7 @@ $brand-lightest-border: hsla(39, 100%, 50%, .3);
 $brand-light-border: hsla(23, 94%, 51%, .4);
 
 $brand-btn: linear-gradient(0deg, #000, #333);
-$brand-btn: linear-gradient(0deg, $brand, $brand-light);
+$brand-btn: linear-gradient(0deg, $brand-dark, $brand-light);
 $brand-btn-hover: $brand;
 $brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
 
