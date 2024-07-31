@@ -40,8 +40,8 @@
         transition: box-shadow 500ms ease, background-color 250ms;
 
         @include abstracts.dark {
-            background-color: #000;
             background-color: transparent;
+            background-color: hsl(0, 0%, 3%);
         }
 
     }
@@ -146,10 +146,9 @@
         }
 
         @include abstracts.dark {
-            color: abstracts.$text-second;
             
             &::after {
-            background-color: #000;
+            background-color: hsl(0, 0%, 0%);
             }
         }
     }
@@ -167,6 +166,10 @@
     cursor: default;
     transition: 250ms;
     z-index: 1;
+
+    @include abstracts.dark {
+        color: abstracts.$text-second-light;
+    }
 
     // DESKTOP POINTER CURSOR
     @include abstracts.sm {

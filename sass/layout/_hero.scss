@@ -2,7 +2,7 @@
 
 // HERO 
 #hero {
-    // border: 1px solid #0006;
+    border: 1px solid #0006;
     height: 95vh;
     position: relative;
     isolation: isolate;
@@ -10,8 +10,14 @@
     
     background: hsl(0, 0%, 90%);
     background: linear-gradient(0deg, #e0e0e0, hsl(0, 0%, 90%));
-    background: linear-gradient(0deg, #d9d9d9, hsl(0, 0%, 90%));
+    background: linear-gradient(0deg, hsl(0, 0%, 85%), hsl(0, 0%, 90%));
     // padding: 5vh 5vw;
+
+    @include abstracts.dark {
+        background: #333;
+        background: linear-gradient(0deg, hsl(0, 0%, 3%), hsl(0, 0%, 30%));
+        color: #fafafa;
+    }
     
     display: grid;
     // grid-template-rows: auto 1fr;
@@ -47,8 +53,8 @@
     grid-area: image;
     mix-blend-mode: darken;
 
-    @include abstracts.sm {
-        // background: none;
+    @include abstracts.dark {
+        mix-blend-mode: normal;
     }
 
     img {
@@ -95,6 +101,11 @@
         border-radius: 50%;
         z-index: -1;
         filter: blur(1rem);
+
+        // DARK THEME
+        @include abstracts.dark {
+            display: none;
+        }
     }
 
     @include abstracts.lg {
@@ -103,6 +114,8 @@
             display: none;
         }
     }
+
+    
 
     h1 {
         margin-bottom: 0.5rem;
@@ -114,8 +127,13 @@
     .slogan {
         text-transform: capitalize;
         p {
-            font-size: abstracts.$font-clamp-sm;
-        }
+                font-size: abstracts.$font-clamp-sm;
+        
+                // DARK THEME
+                @include abstracts.dark {
+                    color: abstracts.$text-second-light;
+                }
+            }
 
         :first-child {
             margin-bottom: .25rem;

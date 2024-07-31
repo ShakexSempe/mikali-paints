@@ -882,6 +882,12 @@ img {
   padding: 5vh 5vw;
   min-height: 80vh;
 }
+@media (prefers-color-scheme: dark) {
+  .cta-section {
+    background: #1a1a1a;
+    color: #fff;
+  }
+}
 @media (min-width: 768px) {
   .cta-section {
     padding: 10vh 10vw;
@@ -911,11 +917,21 @@ img {
   color: #a30f2d;
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
 }
+@media (prefers-color-scheme: dark) {
+  .cta-section article h3 {
+    color: #eb2d53;
+  }
+}
 .cta-section article h4 {
   font-weight: 500;
 }
 .cta-section article p {
   padding: 1rem 0;
+}
+@media (prefers-color-scheme: dark) {
+  .cta-section article p {
+    color: #cccccc;
+  }
 }
 .cta-section article a {
   color: #a30f2d;
@@ -924,6 +940,11 @@ img {
 }
 .cta-section article a:hover {
   text-decoration-color: #a30f2d;
+}
+@media (prefers-color-scheme: dark) {
+  .cta-section article a {
+    color: #eb2d53;
+  }
 }
 .cta-section article ul {
   padding: 0rem 1rem 0.5rem 1rem;
@@ -936,6 +957,11 @@ img {
 }
 .cta-section article ul li::after {
   content: ".";
+}
+@media (prefers-color-scheme: dark) {
+  .cta-section article ul li {
+    color: #ffffff;
+  }
 }
 .cta-section .cta-section-img {
   margin: 5vh 0;
@@ -1166,8 +1192,8 @@ img {
 }
 @media (prefers-color-scheme: dark) {
   #header::after {
-    background-color: #000;
     background-color: transparent;
+    background-color: #080808;
   }
 }
 @media (min-width: 820px) {
@@ -1184,11 +1210,8 @@ img {
   transition: box-shadow 5000ms ease, background-color 125ms;
 }
 @media (prefers-color-scheme: dark) {
-  #header.main-header {
-    color: #ffffff;
-  }
   #header.main-header::after {
-    background-color: #000;
+    background-color: black;
   }
 }
 
@@ -1200,6 +1223,11 @@ img {
   cursor: default;
   transition: 250ms;
   z-index: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .logo {
+    color: #cccccc;
+  }
 }
 @media (min-width: 500px) {
   .logo {
@@ -1567,6 +1595,7 @@ aside.active .social-links a {
 }
 
 #hero {
+  border: 1px solid #0006;
   height: 95vh;
   position: relative;
   isolation: isolate;
@@ -1577,6 +1606,13 @@ aside.active .social-links a {
   display: grid;
   grid-template-rows: 55% 1fr;
   grid-template-areas: "image" "title";
+}
+@media (prefers-color-scheme: dark) {
+  #hero {
+    background: #333;
+    background: linear-gradient(0deg, #080808, #4d4d4d);
+    color: #fafafa;
+  }
 }
 @media (min-width: 820px) {
   #hero {
@@ -1601,6 +1637,11 @@ aside.active .social-links a {
 .hero-image {
   grid-area: image;
   mix-blend-mode: darken;
+}
+@media (prefers-color-scheme: dark) {
+  .hero-image {
+    mix-blend-mode: normal;
+  }
 }
 .hero-image img {
   height: 100%;
@@ -1637,6 +1678,11 @@ aside.active .social-links a {
   z-index: -1;
   filter: blur(1rem);
 }
+@media (prefers-color-scheme: dark) {
+  .hero-title::after {
+    display: none;
+  }
+}
 @media (min-width: 820px) {
   .hero-title {
     padding: 0.5rem;
@@ -1656,6 +1702,11 @@ aside.active .social-links a {
 }
 .hero-title .slogan p {
   font-size: clamp(1rem, 1.5vw, 1.025rem);
+}
+@media (prefers-color-scheme: dark) {
+  .hero-title .slogan p {
+    color: #cccccc;
+  }
 }
 .hero-title .slogan :first-child {
   margin-bottom: 0.25rem;
@@ -1689,7 +1740,7 @@ aside.active .social-links a {
 }
 @media (prefers-color-scheme: dark) {
   .menu-container {
-    background-color: #000;
+    background-color: #1111;
   }
 }
 
@@ -2165,7 +2216,7 @@ aside.active .social-links a {
 }
 @media (prefers-color-scheme: dark) {
   .services {
-    background: #222;
+    background: #1a1a1a;
     color: #f4f4f4;
   }
   .services P {
