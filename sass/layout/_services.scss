@@ -43,27 +43,12 @@
         // max-width: 400px;
         h3 {
             font-size: abstracts.$font-clamp-lg;
-            margin-bottom: 5vh;
+            margin-bottom: 1.5rem;
             line-height: 1.2;
             
             span {
                 color: abstracts.$brand;
             }
-        }
-    
-        .service-cta-container {
-            // display: none;
-            h4 {
-                text-transform: uppercase;
-                font-size: abstracts.$font-clamp-sm;
-                margin-bottom: 0.5rem;
-            }
-
-        }
-
-        @include abstracts.xlg {
-            display: flex;
-            justify-content: space-between;
         }
 
     }
@@ -160,27 +145,49 @@
 
 }
 
-.service-title-icon {
-    position: absolute;
-    right: 5vw;
-    top: 15vh;
-    filter: drop-shadow(0.5rem 0.5rem 0.25rem hsla(348, 83%, 10%, 0.15));
-    transform-style: preserve-3d;
-    
-    // &.brush {
-    //     animation: brush 5500ms infinite;
-    // }
-    // &.ruler {
-    //     animation: ruler 5500ms infinite;
-    // }
+.service-cta-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    gap: 1rem;
 
-    @include abstracts.lg {
-        right: 40%;
-        display: none;
+    @include abstracts.md {
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
+    h4 {
+        text-transform: uppercase;
+        font-size: abstracts.$font-clamp-sm;
+        margin-bottom: 0.5rem;
+    }
     
+    .service-title-icon {
+        width: auto;
+        height: 100%;
+        max-height: 50vh;
+
+        object-fit: cover;
+        object-position: center;
+        
+        border-radius: 0.25rem;
+        
+    
+        @include abstracts.md {
+            // right: 40%;
+            // display: none;
+            // width: 50%;
+            width: 200px;
+            height: 200px;
+            top: -15vh;
+            
+        }
+    
+        
+    }
+
 }
+
 
 .service-item-imgs {
     // border: 2px solid red;

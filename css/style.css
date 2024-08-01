@@ -2244,22 +2244,11 @@ aside.active .social-links a {
 }
 .service-section .service-title h3 {
   font-size: clamp(1.5rem, 4vw, 2rem);
-  margin-bottom: 5vh;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 .service-section .service-title h3 span {
   color: #75500b;
-}
-.service-section .service-title .service-cta-container h4 {
-  text-transform: uppercase;
-  font-size: clamp(1rem, 1.5vw, 1.025rem);
-  margin-bottom: 0.5rem;
-}
-@media (min-width: 1024px) {
-  .service-section .service-title {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 .service-section .service-items {
   margin-block: 5vh;
@@ -2369,17 +2358,36 @@ aside.active .social-links a {
   }
 }
 
-.service-title-icon {
-  position: absolute;
-  right: 5vw;
-  top: 15vh;
-  filter: drop-shadow(0.5rem 0.5rem 0.25rem rgba(47, 4, 13, 0.15));
-  transform-style: preserve-3d;
+.service-cta-container {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  gap: 1rem;
 }
-@media (min-width: 820px) {
-  .service-title-icon {
-    right: 40%;
-    display: none;
+@media (min-width: 768px) {
+  .service-cta-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.service-cta-container h4 {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.5vw, 1.025rem);
+  margin-bottom: 0.5rem;
+}
+.service-cta-container .service-title-icon {
+  width: auto;
+  height: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.25rem;
+}
+@media (min-width: 768px) {
+  .service-cta-container .service-title-icon {
+    width: 200px;
+    height: 200px;
+    top: -15vh;
   }
 }
 
