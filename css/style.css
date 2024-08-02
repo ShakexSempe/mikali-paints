@@ -906,7 +906,7 @@ img {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
-    background-size: 50%;
+    background-size: 45%;
   }
 }
 .cta-section article {
@@ -2253,7 +2253,7 @@ aside.active .social-links a {
 .service-section .service-items {
   margin-block: 5vh;
   display: grid;
-  gap: 5vh;
+  gap: 1rem;
 }
 @media (min-width: 768px) {
   .service-section .service-items {

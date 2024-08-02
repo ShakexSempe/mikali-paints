@@ -57,7 +57,7 @@
     .service-items {
         margin-block: 5vh;
         display: grid;
-        gap: 5vh;
+        gap: 1rem;
         
         @include abstracts.md {
             grid-template-columns: repeat(2, 1fr);
