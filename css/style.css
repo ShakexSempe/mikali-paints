@@ -910,7 +910,7 @@ img {
   }
 }
 .cta-section article {
-  margin-bottom: 5vh;
+  padding-bottom: 5vh;
   max-width: 550px;
 }
 @media (min-width: 768px) {
@@ -2216,7 +2216,7 @@ aside.active .social-links a {
   isolation: isolate;
   max-width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .services {
     padding: 5vw 10vw;
   }
@@ -2367,6 +2367,7 @@ aside.active .social-links a {
 @media (min-width: 768px) {
   .service-cta-container {
     flex-direction: row-reverse;
+    justify-content: flex-end;
     justify-content: space-between;
   }
 }
@@ -2383,14 +2384,6 @@ aside.active .social-links a {
   object-position: center;
   border-radius: 0.25rem;
 }
-@media (min-width: 768px) {
-  .service-cta-container .service-title-icon {
-    width: 200px;
-    height: 200px;
-    top: -15vh;
-  }
-}
-
 .service-item-imgs {
   overflow-x: scroll;
   overflow-y: hidden;

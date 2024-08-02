@@ -11,7 +11,7 @@
     // height: 95vh;
     max-width: 100%;
 
-    @include abstracts.md {
+    @include abstracts.lg {
         padding: 5vw 10vw;
     }
 
@@ -153,6 +153,7 @@
 
     @include abstracts.md {
         flex-direction: row-reverse;
+        justify-content: flex-end;
         justify-content: space-between;
     }
 
@@ -177,9 +178,9 @@
             // right: 40%;
             // display: none;
             // width: 50%;
-            width: 200px;
-            height: 200px;
-            top: -15vh;
+            // width: 200px;
+            // height: 200px;
+            // top: -15vh;
             
         }
     
