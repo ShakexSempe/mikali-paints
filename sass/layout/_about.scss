@@ -15,10 +15,11 @@
             position: absolute;
             inset: 0;
             z-index: -1;
-            background-image: url('../../img/renovation.jpg');
+            background-image: url('../../img/mikali-ceiling-worker.jpg');
             background-repeat: no-repeat;
-            background-position: right;
+            background-position: right top;
             background-size: cover;
+            background-size: 50%;
             background-attachment: fixed;
             mix-blend-mode: overlay;
             // opacity: .5;
@@ -98,6 +99,20 @@
         
     }
 
+}
+
+.about-img {
+    // border: 2px solid #000;
+    // border: 2px solid abstracts.$brand;
+    // width: 100%;
+    height: auto;
+    max-height: 65vh;
+    object-fit: cover;
+    border-radius: 0.25rem;
+
+    @include abstracts.md {
+        display: none;
+    }
 }
 
 .about-article-img {
