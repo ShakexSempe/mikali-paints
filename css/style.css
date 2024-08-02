@@ -932,7 +932,7 @@ img {
   font-weight: 500;
 }
 .cta-section article p {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 @media (prefers-color-scheme: dark) {
   .cta-section article p {
