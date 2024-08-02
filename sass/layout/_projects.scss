@@ -2,16 +2,11 @@
 
 // PROJECTS SECTION
 #projects {
-
-    // background-color: hsl(0, 0%, 40%);
-    // background-color: yellow;
-    // background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 40%));
-    // background: linear-gradient(90deg, hsl(0, 0%, 80%), hsl(0, 0%, 85%));
     padding: 10vh 5vw;
     background-color: hsl(0, 0%, 90%);
 
     @include abstracts.md {
-        padding: 5vh 10vw;
+        padding: 10vh 10vw;
     }
 
     @include abstracts.dark {
@@ -106,19 +101,13 @@
     .project-item {
         overflow: hidden;
         h4 {
-            padding-bottom: 0.5rem;
-            font-size: abstracts.$font-clamp-md;
+            margin-bottom: 1rem;
+            font-size: abstracts.$font-clamp-lg;
             font-weight: 500;
+            text-align: center;
+            color: abstracts.$brand-light;
         }
 
-        
-
-        &:hover {
-            h4 {
-                color: abstracts.$brand;
-            }
-            
-    }
 }
 
 
@@ -126,25 +115,35 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    // border: 2px solid red;
+    padding: 1rem;
 
-    img {
+    figure {
         max-width: 350px;
         max-height: 55vh;
 
         width: 100%;
-        height: 100%;
         height: auto;
-        
-        object-fit: cover;
-        border: 1px solid #000;
+        height: 100%;
+        overflow: hidden;
+        // border: 2px solid #000;
         border-radius: 0.25rem;
-        transition: 250ms ease;
+        box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.35);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            transition: 250ms ease;
+    
+        }
 
     }
+
 
     @include abstracts.lg {
         flex-direction: row;
         gap: 2rem;
     }
 }
+
 }
