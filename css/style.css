@@ -2383,9 +2383,12 @@ aside.active .social-links a {
 }
 @media (min-width: 768px) {
   .service-cta-container {
+    flex-direction: row;
     flex-direction: row-reverse;
     justify-content: flex-end;
     justify-content: space-between;
+    border-top: 1px solid #0005;
+    padding-top: 0.5rem;
   }
 }
 .service-cta-container h4 {

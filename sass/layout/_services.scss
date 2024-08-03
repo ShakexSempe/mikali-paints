@@ -152,9 +152,12 @@
     gap: 1rem;
 
     @include abstracts.md {
+        flex-direction: row;
         flex-direction: row-reverse;
         justify-content: flex-end;
         justify-content: space-between;
+        border-top: 1px solid #0005;
+        padding-top: 0.5rem;
     }
 
     h4 {
@@ -163,6 +166,11 @@
         margin-bottom: 0.5rem;
     }
     
+    // .cta-items-container {
+    //     border: 1px solid blue;
+    //     background-color: #ff0000;
+    // }
+
     .service-title-icon {
         width: auto;
         height: 100%;
