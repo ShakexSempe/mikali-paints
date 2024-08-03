@@ -2106,11 +2106,15 @@ aside.active .social-links a {
   overflow: hidden;
 }
 .project-items .project-item h4 {
-  margin-bottom: 1rem;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 5vh;
+  padding: 0.25rem;
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
   text-align: center;
-  color: #75500b;
+  color: #d28f14;
+  background: #000;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
 }
 .project-items .flex-container {
   display: flex;
@@ -2132,12 +2136,16 @@ aside.active .social-links a {
 .project-items .flex-container figure img {
   height: 100%;
   object-fit: cover;
-  transition: 250ms ease;
+  transition: 350ms ease;
+}
+.project-items .flex-container figure:hover img {
+  transform: scale(1.05);
 }
 @media (min-width: 820px) {
   .project-items .flex-container {
     flex-direction: row;
     gap: 2rem;
+    padding: 0;
   }
 }
 

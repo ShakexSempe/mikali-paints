@@ -105,19 +105,26 @@
     // border: 2px solid red;
     display: grid;
     gap: 10vh;
-
     
     .project-item {
         overflow: hidden;
+        
         h4 {
-            margin-bottom: 1rem;
-            font-size: abstracts.$font-clamp-lg;
+            margin-bottom: 5vh;
+            padding: 0.25rem;
+
+            font-size: abstracts.$font-clamp-md;
             font-weight: 500;
             text-align: center;
-            color: abstracts.$brand;
+            
+            color: abstracts.$brand-light;
+            background: #000;
+            
+            border-top-right-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
         }
 
-}
+    }
 
 
 .flex-container {
@@ -142,14 +149,14 @@
         img {
             height: 100%;
             object-fit: cover;
-            transition: 250ms ease;
-    
+            transition: 350ms ease;
         }
 
-    @include abstracts.lg {
-        
-    }
-
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
 
     }
 
@@ -157,6 +164,7 @@
     @include abstracts.lg {
         flex-direction: row;
         gap: 2rem;
+        padding: 0;
     }
 }
 
