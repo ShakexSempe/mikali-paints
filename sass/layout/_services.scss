@@ -172,10 +172,10 @@
     // }
 
     .service-title-icon {
-        width: auto;
+        width: 100%;
         height: 100%;
         max-height: 50vh;
-
+        
         object-fit: cover;
         object-position: center;
         
@@ -183,6 +183,7 @@
         
     
         @include abstracts.md {
+        max-width: 350px;
             // right: 40%;
             // display: none;
             // width: 50%;
