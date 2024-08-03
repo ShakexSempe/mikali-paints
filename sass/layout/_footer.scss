@@ -104,10 +104,12 @@
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.25rem;
+
                 @include abstracts.lg {
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
                 }
+                
                 i {
                     width: 1rem;
                     margin-right: .5rem;
