@@ -18,7 +18,7 @@ $brand-lightest-border: hsla(39, 100%, 50%, .3);
 $brand-light-border: hsla(23, 94%, 51%, .4);
 
 $brand-btn: linear-gradient(0deg, $brand-dark, $brand-light);
-$brand-btn: linear-gradient(0deg, #000, #222);
+$brand-btn: linear-gradient(0deg, #222, #333);
 $brand-btn-hover: $brand;
 $brand-btn-hover: linear-gradient(0deg, $brand-light, $brand-dark);
 $brand-btn-hover: linear-gradient(0deg, #222, #000);
@@ -55,8 +55,8 @@ $nav-icons: #fff9;
 $active-nav-icon: #f4f4f4;
 
 
-$button-shadow-sm: inset 2px 2px 2px rgba(255, 255, 255, 0.250),
-                inset -2px -2px 2px rgba(0, 0, 0, 0.250),
+$button-shadow-sm: inset 2px 2px 4px rgba(255, 255, 255, 0.150),
+                inset -2px -2px 4px rgba(0, 0, 0, 0.250),
                 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.115);
 
 $button-shadow-sm-hover: inset 2px 2px 2px rgba(0, 0, 0, 0.250),

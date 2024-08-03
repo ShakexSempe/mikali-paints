@@ -99,7 +99,7 @@
 
         &:active, &:focus, &:hover  {
             .icon {
-                transform: rotate(20deg) translateX(.25rem);
+                transform: translateX(-.25rem);
                 transition: .25s;
             }
         }

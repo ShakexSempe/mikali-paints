@@ -58,6 +58,7 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     color: abstracts.$text-second;
     color: abstracts.$brand-light;
     border: none;
+    border-radius: 0.25rem;
     border-radius: abstracts.$border-radius-sm;
 
     // font-family: abstracts.$font-content;
@@ -110,7 +111,7 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
         width: 100%;
         height: 100%;
         border: none;
-        border-radius: abstracts.$border-radius-sm;
+        border-radius: inherit;
         z-index: -1;
         transition: 300ms linear;
     }
