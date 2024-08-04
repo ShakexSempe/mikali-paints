@@ -116,14 +116,13 @@
 }
 
 .about-article-img {
-    // height: 10rem;
-    // border: 2px solid abstracts.$brand;
     margin: 1rem auto;
     border-radius: 0.25rem;
     overflow: hidden;
     max-height: 15rem;
 
     img {
+        height: 100%;
         object-fit: cover;
         transition: 350ms ease;
     }
