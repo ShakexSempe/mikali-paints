@@ -169,11 +169,21 @@ p, li {
 
 a {
   text-decoration: 2px underline transparent;
+  color: #75500b;
   color: inherit;
   transition: 250ms;
 }
 a:hover:not(.cta-btn, .skip-link, .logo), a:focus:not(.cta-btn, .skip-link, .logo) {
-  color: #75500b;
+  color: #d28f14;
+}
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #d28f14;
+  }
+  a:hover:not(.cta-btn, .skip-link, .logo), a:focus:not(.cta-btn, .skip-link, .logo) {
+    color: #75500b;
+    color: green;
+  }
 }
 
 span {
@@ -797,6 +807,11 @@ img {
   text-transform: capitalize;
   color: #75500b;
 }
+@media (prefers-color-scheme: dark) {
+  .about-article a {
+    color: #d28f14;
+  }
+}
 .about-article.io-item h3 {
   letter-spacing: 0.025rem;
   transition: 500ms linear;
@@ -950,17 +965,11 @@ img {
   }
 }
 .cta-section article .article-content a {
-  color: #75500b;
   text-transform: capitalize;
   font-size: inherit;
 }
 .cta-section article .article-content a:hover {
   text-decoration-color: #75500b;
-}
-@media (prefers-color-scheme: dark) {
-  .cta-section article .article-content a {
-    color: #d28f14;
-  }
 }
 .cta-section article .article-content ul {
   padding: 0rem 1rem;
@@ -1850,16 +1859,18 @@ aside.active .social-links a {
 .menu-item-link {
   display: flex;
   align-items: center;
-  text-transform: capitalize;
   gap: 0.25rem;
+  width: 50%;
+  text-transform: capitalize;
   text-underline-offset: 2px;
+  cursor: default;
 }
-.menu-item-link .icon {
-  width: 0.85rem;
-  height: 0.85rem;
+@media (min-width: 820px) {
+  .menu-item-link {
+    cursor: pointer;
+  }
 }
 .menu-item-link:hover {
-  color: inherit;
   text-decoration-color: #75500b;
 }
 .menu-item-link:hover .icon {
@@ -2107,8 +2118,9 @@ aside.active .social-links a {
   font-size: clamp(1.125rem, 2.25vw, 1.25rem);
   font-weight: 500;
   text-align: center;
-  color: #d28f14;
+  color: #ffffff;
   background: #000;
+  background: linear-gradient(90deg, #000, #0d0d0d, #000);
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
 }
@@ -2278,9 +2290,6 @@ aside.active .social-links a {
   font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1.5rem;
   line-height: 1.2;
-}
-.service-section .service-title h3 span {
-  color: #75500b;
 }
 .service-section .service-items {
   margin-block: 5vh;

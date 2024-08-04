@@ -46,9 +46,7 @@
             margin-bottom: 1.5rem;
             line-height: 1.2;
             
-            span {
-                color: abstracts.$brand;
-            }
+        
         }
 
     }
@@ -166,10 +164,15 @@
         margin-bottom: 0.5rem;
     }
     
-    // .cta-items-container {
-    //     border: 1px solid blue;
-    //     background-color: #ff0000;
-    // }
+    .cta-items-container {
+        @include abstracts.dark {
+            
+            // a {
+            //     color: green;
+            // }
+
+        }
+    }
 
     .service-title-icon {
         width: 100%;

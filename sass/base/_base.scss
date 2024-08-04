@@ -190,11 +190,25 @@ p, li {
 
 a {
     text-decoration: 2px underline transparent;
+    color: abstracts.$brand;
     color: inherit;
+
     transition: 250ms;
+
     &:hover:not(.cta-btn, .skip-link, .logo), &:focus:not(.cta-btn, .skip-link, .logo) {
-        color: abstracts.$brand;
+        color: abstracts.$brand-light;
     }
+    
+    @include abstracts.dark {
+        color: abstracts.$brand-light;
+        
+        &:hover:not(.cta-btn, .skip-link, .logo), &:focus:not(.cta-btn, .skip-link, .logo) {
+            color: abstracts.$brand;
+            color: green;
+        }
+
+    }
+
 }
 
 span {

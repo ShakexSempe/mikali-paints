@@ -90,19 +90,25 @@
 .menu-item-link {
     display: flex;
     align-items: center;
-    // color: abstracts.$brand;
-    text-transform: capitalize;
     gap: 0.25rem;
+    
+    width: 50%;
+
+    text-transform: capitalize;
     text-underline-offset: 2px;
-    // width: max-content;
+    cursor: default;
+
+    @include abstracts.lg {
+        cursor: pointer;
+    }
     
     .icon {
-        width: 0.85rem;
-        height: 0.85rem;
+        // width: 0.85rem;
+        // height: 0.85rem;
     }
 
     &:hover {
-        color: inherit;
+        // color: inherit;
         text-decoration-color: abstracts.$brand;
 
         .icon {
@@ -138,14 +144,15 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    // display: none;
 
     a {
         text-decoration-color: hsl(0, 0%, 95%);
         text-underline-offset: 3px;
+
         @include abstracts.dark {
             text-decoration-color: transparent;
         }
+
     }
 
 

@@ -65,11 +65,12 @@
     a {
         text-transform: capitalize;
         color: abstracts.$brand;
-    }
+        
+        @include abstracts.dark {
+            color: abstracts.$brand-light
+        }
 
-    // @include abstracts.lg {
-    //     background: #fff;
-    // }
+    }
 
     &.io-item {
 

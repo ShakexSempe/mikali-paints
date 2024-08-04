@@ -57,14 +57,14 @@
             }
         
             a {
-                color: abstracts.$brand;
+                // color: abstracts.$brand;
                 text-transform: capitalize;
                 font-size: inherit;
                 &:hover {
                     text-decoration-color: abstracts.$brand;
                 }
                 @include abstracts.dark {
-                    color: abstracts.$brand-light;
+                    // color: abstracts.$brand-light;
                 }
             }
         
