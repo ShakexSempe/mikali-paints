@@ -46,32 +46,26 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
     align-items: center;
 
     width: 11rem;
-    // height: 4rem;
     width: clamp(11rem, 15vw, 12rem);
-    padding: 0.75rem 0.75rem;
     padding: 0.65rem;
     margin: 0.5rem 0;
 
     background: abstracts.$button;
-    color: hsl(0, 0%, 85%);
-    color: abstracts.$text-main;
-    color: abstracts.$text-second;
     color: abstracts.$brand-light;
+
     border: none;
     border-radius: 0.25rem;
     border-radius: abstracts.$border-radius-sm;
 
-    // font-family: abstracts.$font-content;
     font-size: 0.85rem;
     font-size: abstracts.$font-clamp-xsm;
-    // font-weight: 500;
-    text-decoration: none;
     text-transform: capitalize;
     text-transform: uppercase;
+    text-decoration: none;
 
     position: relative;
     isolation: isolate;
-    transition: .25s;
+    transition: 250ms linear;
     cursor: default;
 
     @include abstracts.sm {
@@ -85,7 +79,7 @@ $btn-lg : clamp(12rem, 20vw, 14rem);
 
     // BUTTON WITH SVG IMAGE ICON
     .hero-cta-icon {
-        transition: .25s;
+        transition: 250ms ease;
         animation: hero-arrow 1s infinite;
         @keyframes hero-arrow {
             50% {
