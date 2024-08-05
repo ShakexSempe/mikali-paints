@@ -46,6 +46,7 @@
 .hero-image {
     grid-area: image;
     mix-blend-mode: darken;
+    mix-blend-mode: normal;
 
     @include abstracts.dark {
         mix-blend-mode: normal;
