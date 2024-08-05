@@ -1663,6 +1663,7 @@ aside.active .social-links a {
 .hero-image {
   grid-area: image;
   mix-blend-mode: darken;
+  mix-blend-mode: normal;
 }
 @media (prefers-color-scheme: dark) {
   .hero-image {
